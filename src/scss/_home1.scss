@@ -1,0 +1,268 @@
+.home {
+
+
+
+    .content-area {
+        margin-left: 35%;
+        width: 65%;
+        background: $color3;
+        min-height: 100vh;
+
+
+        //padding: 0 0 0 25%;
+        .img-container {
+            display: inline-block;
+            width: 40%;
+            position: relative;
+            height: 100%;
+
+            .user-img {
+                position: absolute;
+                left: -250px;
+                top: 56px;
+                width: 100%;
+                height: calc(100vh - 112px);
+
+                background: url(/img/home_mutilogo_2.gif) no-repeat center center;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+
+                -webkit-box-shadow: 23px 23px 80px -7px rgba(0, 0, 0, 0.3);
+                -moz-box-shadow: 23px 23px 80px -7px rgba(0, 0, 0, 0.3);
+                box-shadow: 23px 23px 80px -7px rgba(0, 0, 0, 0.3);
+
+            }
+
+            .resume-img {
+                position: absolute;
+                left: -250px;
+                top: 56px;
+                width: 100%;
+                height: calc(100vh - 112px);
+
+                background: url(https://www.logolynx.com/images/logolynx/e1/e1d2fcf29877eb842ac100cbb3329119.png) no-repeat center center;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+
+                -webkit-box-shadow: 23px 23px 80px -7px rgba(0, 0, 0, 0.3);
+                -moz-box-shadow: 23px 23px 80px -7px rgba(0, 0, 0, 0.3);
+                box-shadow: 23px 23px 80px -7px rgba(0, 0, 0, 0.3);
+
+            }
+        }
+
+
+
+        .profile-section {
+            display: inline-block;
+            width: 60%;
+            vertical-align: top;
+            max-width: 500px;
+            padding: 20% 0 0 0;
+
+            .profile {
+                h1 {
+                    font-size: 2.3rem;
+                    font-weight: 500;
+                    line-height: 1.2;
+                    margin: 0 0 1rem 0;
+
+                    span {
+                        color: $color1;
+                    }
+                }
+
+                h5 {
+                    font-size: 1.1rem;
+                    margin: 0 0 2rem 0;
+                }
+
+                p {
+                    color: $color5;
+                    font-weight: 300;
+                    line-height: 1.4;
+                    margin: 0 0 2rem 0;
+                }
+            }
+        }
+    }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+// custom for small devices
+
+@media (max-width: 767px) {
+    .home {
+        .menu-icon {
+            top: -3px;
+            right: 20px;
+
+            .fas {
+                color: white;
+
+            }
+        }
+
+        .content-area {
+            /* overflow: auto; */
+            /*  height: auto;
+
+            &:after {
+                content: "";
+                display: table;
+                clear: both;
+            } */
+        }
+
+        .info-section {
+            /*  display: none; */
+            padding: 10px 20px;
+            width: 35%;
+            position: static;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            min-height: 100%;
+
+            /* .logo {
+                height: 40px;
+                width: 40px;
+                font-size: 1rem;
+                border: 0px solid transparent;
+
+
+                background: url(https://i.imgur.com/1fXUQ8a.png) no-repeat center center;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+            } */
+
+            .info-box {
+                display: none;
+            }
+        }
+
+        .content-area {
+            margin-left: 0;
+            width: 100%;
+
+            .img-container {
+                padding: 56px 20px 0;
+
+                .user-img {
+                    position: static;
+                    width: 100%;
+                }
+            }
+
+            .profile-section {
+                width: 60%;
+                padding: 20% 20px 0;
+
+
+            }
+        }
+    }
+}
+
+
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+    .home {
+        .info-section {
+            width: 20%;
+            padding: 56px 20px;
+
+            .icon-section {
+                a {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+
+        .content-area {
+            margin-left: 30%;
+            width: 70%;
+
+            .img-container {
+                padding: 56px 20px 0;
+
+                .user-img {
+                    position: static;
+                    width: 100%;
+                }
+            }
+
+            .profile-section {
+                width: 60%;
+                padding: 20% 20px 0;
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 992px) and (max-width: 1199px) {
+    .home {
+        .content-area {
+            .img-container {
+                padding: 56px 20px 0;
+                float: left;
+
+                .user-img {
+                    position: static;
+                    width: 100%;
+                }
+            }
+
+            .profile-section {
+                width: 60%;
+                float: left;
+                padding: 20% 60px 0;
+                max-width: 800px;
+
+
+            }
+        }
+    }
+}
+
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .home {
+        .content-area {
+            .img-container {
+                padding: 56px 20px 0;
+                float: left;
+
+                .user-img {
+                    position: static;
+                    width: 100%;
+                }
+            }
+
+            .profile-section {
+                width: 60%;
+                float: left;
+                max-width: 800px;
+                padding: 20% 20px 0;
+
+                .primary-btn,
+                .ghost-btn {
+                    margin-bottom: 20px;
+                }
+            }
+
+
+        }
+    }
+}
