@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
-const project1 = {
-  background: `url(https://cdn.dribbble.com/users/14268/screenshots/5395958/reilanding_2x.png) no-repeat center center`
+const fr_img = {
+  background: `url(https://i.imgur.com/920XY2o.png) no-repeat center center`
 };
 
 const rs_img = {
@@ -10,6 +10,9 @@ const rs_img = {
 
 const res_img = {
   background: `url(https://i.imgur.com/uLYos7V.png) no-repeat center center`
+};
+const wr_img = {
+  background: `url(https://i.imgur.com/W6t4Lay.png) no-repeat center center`
 };
 
 class Home extends Component {
@@ -137,28 +140,42 @@ class Home extends Component {
                     </div>
                   </div>
                 </a>
-                <div className="project-box" style={project1}>
-                  <div className="grey-bg">
-                    <div className="project-info">
-                      <div className="project-details">
-                        Client: Nike Year: 2018 Type: Ecommerce
+                <a
+                  href="https://wrenchtime.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="project-box" style={wr_img}>
+                    <div className="grey-bg">
+                      <div className="project-info">
+                        <div className="project-details">
+                          Firebase Google Cloud Data
+                        </div>
+                        <div className="project-title">
+                          Wrenchtime Car Maintenance
+                        </div>
+                        <i class="fas fa-long-arrow-alt-right" />
                       </div>
-                      <div className="project-title">The Last Yeezys</div>
-                      <i class="fas fa-long-arrow-alt-right" />
                     </div>
                   </div>
-                </div>
-                <div className="project-box" style={project1}>
-                  <div className="grey-bg">
-                    <div className="project-info">
-                      <div className="project-details">
-                        Client: Nike Year: 2018 Type: Ecommerce
+                </a>
+                <a
+                  href="https://ecommerce-freshgear.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="project-box" style={fr_img}>
+                    <div className="grey-bg">
+                      <div className="project-info">
+                        <div className="project-details">
+                          Fullstack Adonis JS App
+                        </div>
+                        <div className="project-title">The Last Yeezys</div>
+                        <i class="fas fa-long-arrow-alt-right" />
                       </div>
-                      <div className="project-title">The Last Yeezys</div>
-                      <i class="fas fa-long-arrow-alt-right" />
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
             {/*             Work Ends */}
