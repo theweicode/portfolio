@@ -106,7 +106,7 @@ class Home extends Component {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://stackoverflow.com/users/11133416/will"
+                href="https://stackoverflow.com/users/11133416/will/"
               >
                 <i className="fab fa-stack-overflow" />
               </a>
@@ -135,6 +135,9 @@ class Home extends Component {
                         </div>
                         <div className="project-title">Real Estate App</div>
                         <i class="fas fa-long-arrow-alt-right" />
+                        <a href="https://github.com/theweicode/real-estate/">
+                          <i class="fab fa-github" /> <h3>Git Hub</h3>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -152,6 +155,9 @@ class Home extends Component {
                         </div>
                         <div className="project-title">Responsive App</div>
                         <i class="fas fa-long-arrow-alt-right" />
+                        <a href="https://github.com/theweicode/responsive-app/">
+                          <i class="fab fa-github" /> <h3>Git Hub</h3>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -171,6 +177,9 @@ class Home extends Component {
                           Wrenchtime Car Maintenance
                         </div>
                         <i class="fas fa-long-arrow-alt-right" />
+                        <a href="https://github.com/theweicode/wrenchtime/">
+                          <i class="fab fa-github" /> <h3>Git Hub</h3>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -188,6 +197,9 @@ class Home extends Component {
                         </div>
                         <div className="project-title">The Last Yeezys</div>
                         <i class="fas fa-long-arrow-alt-right" />
+                        <a href="https://github.com/theweicode/ecommercesite-freshgear/">
+                          <i class="fab fa-github" /> <h3>Git Hub</h3>
+                        </a>
                       </div>
                     </div>
                   </div>

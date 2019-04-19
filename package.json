@@ -10,7 +10,6 @@
     "react-scripts": "2.1.8"
   },
   "scripts": {
-
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -25,5 +24,4 @@
     "not ie <= 11",
     "not op_mini all"
   ]
-
 }
