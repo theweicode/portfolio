@@ -1,105 +1,105 @@
 .logo {
+  height: 130px;
+  width: 130px;
+  display: flex;
 
+  background: url(https://i.imgur.com/1fXUQ8a.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  transition: $btnTransitions;
 
-    height: 130px;
-    width: 130px;
-    display: flex;
-
-
-
-
-
-    background: url(https://i.imgur.com/1fXUQ8a.png) no-repeat center center;
+  &:hover {
+    background: url(https://i.imgur.com/diOkln8.png) no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    transition: $btnTransitions;
-
-    &:hover {
-        background: url(https://i.imgur.com/diOkln8.png) no-repeat center center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-
+  }
 }
-
-
-
-
-
-
-
-
 
 .info-section {
-    padding: 54px;
-    width: 35%;
+  padding: 54px;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  min-height: 100%;
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    i {
+      color: rgba(255, 255, 255, 0.6);
+      padding: 10px 35px 0px 35px;
+      font-size: 4rem;
+      width: 100px;
+      margin: 10px;
+      text-align: center;
+      line-height: 75px;
+    }
+  }
+
+  h5 {
+    color: white;
+    font-weight: 400;
+    padding: 30px 0px;
+  }
+
+  .info-box {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    min-height: 100%;
+    bottom: 60px;
 
-
-
-    .info-box {
-
-        position: absolute;
-        bottom: 60px;
-
-        .ghost-btn {
-            background-color: white;
-            font-weight: 600;
-        }
-
-        h4 {
-            font-size: 1.2rem;
-            color: $color3;
-            margin: .7rem 0;
-        }
-
-        p {
-            font-size: .9rem;
-            font-weight: 300;
-            color: $color3;
-            margin: .2rem 0 .8rem;
-
-        }
-
-        .icon-section {
-
-
-            a {
-                transition: $btnTransitions;
-                color: $color3;
-                text-decoration: none;
-                font-size: 2rem;
-                padding: 0 10px;
-
-                &:hover {
-                    color: $hoverColor;
-
-                }
-
-                &:first-child {
-                    padding: 0 10px 0 0;
-                }
-            }
-        }
-
+    .ghost-btn {
+      background-color: white;
+      font-weight: 600;
     }
 
+    h4 {
+      font-size: 1.2rem;
+      color: $color3;
+      margin: 0.7rem 0;
+    }
 
+    p {
+      font-size: 0.9rem;
+      font-weight: 300;
+      color: $color3;
+      margin: 0.2rem 0 0.8rem;
+    }
+
+    .icon-section {
+      a {
+        transition: $btnTransitions;
+        color: $color3;
+        text-decoration: none;
+        font-size: 2rem;
+        padding: 0 10px;
+
+        &:hover {
+          color: $hoverColor;
+        }
+
+        &:first-child {
+          padding: 0 10px 0 0;
+        }
+      }
+    }
+  }
 }
 
-
-
 @media (max-width: 767px) {
-    .logo {
-        width: 50px;
-        height: 50px;
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .flex-container {
+    i {
+      display: none;
     }
+  }
 }

@@ -1,18 +1,22 @@
 import React, { Component } from "react";
 
 const fr_img = {
-  background: `url(https://i.imgur.com/920XY2o.png) no-repeat center center`
+  background: `url(https://i.imgur.com/920XY2o.png) no-repeat left top`,
+  backgroundSize: "cover"
 };
 
 const rs_img = {
-  background: `url(https://i.imgur.com/6LZFOVs.png) no-repeat center center`
+  background: `url(https://i.imgur.com/6LZFOVs.png) no-repeat left top`,
+  backgroundSize: "cover"
 };
 
 const res_img = {
-  background: `url(https://i.imgur.com/uLYos7V.png) no-repeat center center`
+  background: `url(https://i.imgur.com/uLYos7V.png) no-repeat left top`,
+  backgroundSize: "cover"
 };
 const wr_img = {
-  background: `url(https://i.imgur.com/W6t4Lay.png) no-repeat center center`
+  background: `url(https://i.imgur.com/W6t4Lay.png) no-repeat left top`,
+  backgroundSize: "cover"
 };
 
 class Home extends Component {
@@ -51,6 +55,17 @@ class Home extends Component {
         </section>
         <section className="info-section">
           <div className="logo" onClick={this.handleClick} />
+          <h5 className="intro">
+            I'm Will Ting, a Web Developer and this is my portfolio
+          </h5>
+          <div className="flex-container">
+            <i class="fab fa-node-js" />
+            <i class="fab fa-html5" />
+            <i class="fab fa-sass" />
+            <i class="fab fa-react" />
+            <i class="fab fa-aws" />
+          </div>
+
           <div className="info-box">
             <a
               href="https://drive.google.com/file/d/1bzaa1inZDZKdMdOGJV4MiLkOzW8x1Mb2/view?usp=sharing"
@@ -103,6 +118,7 @@ class Home extends Component {
             {/*             Work Starts */}
             <div className="work-section">
               <div className="title">
+                <div className="skills-img" />
                 <h1>Latest Works</h1>
               </div>
               <div className="project-section">
