@@ -53,7 +53,7 @@ class Home extends Component {
           <div className="logo" onClick={this.handleClick} />
           <div className="info-box">
             <a
-              href="https://docs.google.com/document/d/1E8RLLFEryxaJG-S2Gpt-kPUcl--BtSOawHGYr19ZGng/edit?usp=sharing"
+              href="https://drive.google.com/file/d/1bzaa1inZDZKdMdOGJV4MiLkOzW8x1Mb2/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="ghost-btn"
