@@ -68,7 +68,7 @@ class Home extends Component {
 
           <div className="info-box">
             <a
-              href="https://drive.google.com/file/d/1bzaa1inZDZKdMdOGJV4MiLkOzW8x1Mb2/view?usp=sharing"
+              href="https://drive.google.com/file/d/1EH5w8_8uF004esY8HBXWqi5WouUULm0T/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="ghost-btn"
