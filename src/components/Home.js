@@ -44,7 +44,7 @@ class Home extends Component {
               Home
             </div>
             <a
-              href="https://docs.google.com/document/d/1E8RLLFEryxaJG-S2Gpt-kPUcl--BtSOawHGYr19ZGng/edit?usp=sharing"
+              href="https://drive.google.com/file/d/1EH5w8_8uF004esY8HBXWqi5WouUULm0T/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="ghost-btn"
