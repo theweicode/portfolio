@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
 
 const fr_img = {
   background: `url(https://i.imgur.com/920XY2o.png) no-repeat left top`,
@@ -114,6 +117,7 @@ class Home extends Component {
           </div>
         </section>
         <section className="content-area">
+          {" "}
           <div className="scroll-section">
             {/*             Work Starts */}
             <div className="work-section">
@@ -122,88 +126,106 @@ class Home extends Component {
                 <h1>Latest Works</h1>
               </div>
               <div className="project-section">
-                <a
-                  href="https://real-estate-app-front-end.herokuapp.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div className="project-box" style={rs_img}>
-                    <div className="grey-bg">
-                      <div className="project-info">
-                        <div className="project-details">
-                          Front End Data Filtering & Responsive Layout
+                <Container>
+                  <Row className="highlight">
+                    <Col>
+                      <a
+                        href="https://real-estate-app-front-end.herokuapp.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <div className="project-box col-md-12" style={rs_img}>
+                          <div className="grey-bg">
+                            <div className="project-info">
+                              <div className="project-details">
+                                Front End Data Filtering & Responsive Layout
+                              </div>
+                              <div className="project-title">
+                                Real Estate App
+                              </div>
+                              <ul>
+                                <li>
+                                  Virtual AWS Services
+                                  <i className="fab fa-aws" />
+                                </li>
+                                <li>
+                                  Google Firebase Database
+                                  <i class="fab fa-google" />
+                                </li>
+                                <li>
+                                  Fast Front End Data Filtering{" "}
+                                  <i class="far fa-file-code" />
+                                </li>
+                                <li>
+                                  SASS / Grid / Flexbox / Bootstrap
+                                  <i className="fab fa-bootstrap" />
+                                  <i className="fab fa-sass" />
+                                </li>
+                                <li>
+                                  Mobile - Laptop - Desktop Responsive Design
+                                </li>
+                              </ul>
+                              <i class="fas fa-long-arrow-alt-right" />
+                              <a href="https://github.com/theweicode/real-estate/">
+                                <i class="fab fa-github" /> <h3>Git Hub</h3>
+                              </a>
+                            </div>
+                          </div>
                         </div>
-                        <div className="project-title">Real Estate App</div>
-                        <i class="fas fa-long-arrow-alt-right" />
-                        <a href="https://github.com/theweicode/real-estate/">
-                          <i class="fab fa-github" /> <h3>Git Hub</h3>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <a
-                  href="https://responsive-app.herokuapp.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div className="project-box" style={res_img}>
-                    <div className="grey-bg">
-                      <div className="project-info">
-                        <div className="project-details">
-                          4k - desktops - laptops - mobile - tablets
+                      </a>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col>
+                      <a
+                        href="https://wrenchtime.herokuapp.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <div className="project-box" style={wr_img}>
+                          <div className="grey-bg">
+                            <div className="project-info">
+                              <div className="project-details">
+                                Firebase Google Cloud Data
+                              </div>
+                              <div className="project-title">
+                                Wrenchtime Car Maintenance
+                              </div>
+                              <i class="fas fa-long-arrow-alt-right" />
+                              <a href="https://github.com/theweicode/wrenchtime/">
+                                <i class="fab fa-github" /> <h3>Git Hub</h3>
+                              </a>
+                            </div>
+                          </div>
                         </div>
-                        <div className="project-title">Responsive App</div>
-                        <i class="fas fa-long-arrow-alt-right" />
-                        <a href="https://github.com/theweicode/responsive-app/">
-                          <i class="fab fa-github" /> <h3>Git Hub</h3>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <a
-                  href="https://wrenchtime.herokuapp.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div className="project-box" style={wr_img}>
-                    <div className="grey-bg">
-                      <div className="project-info">
-                        <div className="project-details">
-                          Firebase Google Cloud Data
+                      </a>
+                    </Col>
+                    <Col>
+                      <a
+                        href="https://ecommerce-freshgear.herokuapp.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <div className="project-box" style={fr_img}>
+                          <div className="grey-bg">
+                            <div className="project-info">
+                              <div className="project-details">
+                                Fullstack Adonis JS App
+                              </div>
+                              <div className="project-title">
+                                The Last Yeezys
+                              </div>
+                              <i class="fas fa-long-arrow-alt-right" />
+                              <a href="https://github.com/theweicode/ecommercesite-freshgear/">
+                                <i class="fab fa-github" /> <h3>Git Hub</h3>
+                              </a>
+                            </div>
+                          </div>
                         </div>
-                        <div className="project-title">
-                          Wrenchtime Car Maintenance
-                        </div>
-                        <i class="fas fa-long-arrow-alt-right" />
-                        <a href="https://github.com/theweicode/wrenchtime/">
-                          <i class="fab fa-github" /> <h3>Git Hub</h3>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <a
-                  href="https://ecommerce-freshgear.herokuapp.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div className="project-box" style={fr_img}>
-                    <div className="grey-bg">
-                      <div className="project-info">
-                        <div className="project-details">
-                          Fullstack Adonis JS App
-                        </div>
-                        <div className="project-title">The Last Yeezys</div>
-                        <i class="fas fa-long-arrow-alt-right" />
-                        <a href="https://github.com/theweicode/ecommercesite-freshgear/">
-                          <i class="fab fa-github" /> <h3>Git Hub</h3>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </a>
+                      </a>
+                    </Col>
+                  </Row>
+                </Container>
               </div>
             </div>
             {/*             Work Ends */}
