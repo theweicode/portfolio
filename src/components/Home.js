@@ -130,7 +130,7 @@ class Home extends Component {
                   <Row className="highlight">
                     <Col>
                       <a
-                        href="https://real-estate-app-front-end.herokuapp.com/"
+                        href="https://master.d716ee3k2f9g4.amplifyapp.com/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
