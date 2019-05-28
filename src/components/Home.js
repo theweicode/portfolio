@@ -128,13 +128,13 @@ class Home extends Component {
               <div className="project-section">
                 <Container>
                   <Row className="highlight">
-                    <Col>
+                    <Col className="repad">
                       <a
                         href="https://master.d716ee3k2f9g4.amplifyapp.com/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <div className="project-box col-md-12" style={rs_img}>
+                        <div className="project-box col-sm-12" style={rs_img}>
                           <div className="grey-bg">
                             <div className="project-info">
                               <div className="project-details">
@@ -143,32 +143,35 @@ class Home extends Component {
                               <div className="project-title">
                                 Real Estate App
                               </div>
-                              <ul>
-                                <li>
-                                  Virtual AWS Services
+
+                              <div className="wrapper">
+                                <div>
+                                  AWS
                                   <i className="fab fa-aws" />
-                                </li>
-                                <li>
-                                  Google Firebase Database
+                                </div>
+                                <div>
+                                  Firebase
                                   <i class="fab fa-google" />
-                                </li>
-                                <li>
-                                  Fast Front End Data Filtering{" "}
-                                  <i class="far fa-file-code" />
-                                </li>
-                                <li>
-                                  SASS / Grid / Flexbox / Bootstrap
+                                </div>
+                                <div>
+                                  {" "}
+                                  Async Data <i class="far fa-file-code" />
+                                </div>
+                                <div>
+                                  {" "}
+                                  Bootstrap / CSS / Flexbox / Grid
                                   <i className="fab fa-bootstrap" />
                                   <i className="fab fa-sass" />
-                                </li>
-                                <li>
-                                  Mobile - Laptop - Desktop Responsive Design
-                                </li>
-                              </ul>
-                              <i class="fas fa-long-arrow-alt-right" />
-                              <a href="https://github.com/theweicode/real-estate/">
-                                <i class="fab fa-github" /> <h3>Git Hub</h3>
-                              </a>
+                                </div>
+                                <div>Responsive Design</div>
+                                <div>
+                                  {" "}
+                                  <i class="fas fa-long-arrow-alt-right" />
+                                  <a href="https://github.com/theweicode/real-estate/">
+                                    <i class="fab fa-github" /> <h3>Git Hub</h3>
+                                  </a>{" "}
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -176,7 +179,7 @@ class Home extends Component {
                     </Col>
                   </Row>
                   <Row>
-                    <Col>
+                    <Col className="highlight pad1" sm={12} md={6}>
                       <a
                         href="https://wrenchtime.herokuapp.com/"
                         target="_blank"
@@ -200,7 +203,7 @@ class Home extends Component {
                         </div>
                       </a>
                     </Col>
-                    <Col>
+                    <Col className="highlight pad1" sm={12} md={6}>
                       <a
                         href="https://ecommerce-freshgear.herokuapp.com/"
                         target="_blank"
