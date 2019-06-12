@@ -1,0 +1,62 @@
+* {
+    font-family: Raleway;
+}
+
+.fas {
+    color: red
+}
+// Small devices (landscape phones, 576px and up) (tablet)
+@media  (max-width: 666px) {
+
+    .wrapper{
+        background: gray;
+        /* height: 100vh; */
+        .header{
+            height: 667px;
+            color: white;
+            background: #252934;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 150px 450px 50px 50px;
+        /*     grid-auto-rows: minmax(50px, 667); */
+            /*Justify Items align the content inside the grid boxes horizontal */
+            /* justify-items: stretch;
+            /*align-items align the content inside the grid boxes vertically*/
+            /* align-items: stretch; */
+          /*   grid-column-gap: 20px;
+            grid-row-gap: 20px; */
+           /*  grid-gap: 20px */
+            .mobile-home {
+                font-size: 21px;
+                .name {
+                    color: #e31b6d
+                }
+             
+               grid-column: 3 / 11;
+         grid-row: 2 /3;
+
+         .btn{
+             top: 50px;
+             color: white;
+             border: 2px solid white;
+             padding: 12px 20px 12px 20px;
+             position: relative;
+             margin-bottom: 53px;
+          
+             cursor: pointer;
+             transition: all .5s;
+             line-height: 11pt;
+             font-family: 'Raleway';
+           
+text-align: center;
+font-size: 12pt;
+         }
+            }
+        }
+    }
+
+    .projects{
+        height: 100vh;
+    }
+
+}
