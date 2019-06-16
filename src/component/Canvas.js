@@ -1,69 +1,96 @@
 import React, { Component } from "react";
 import "./Canvas.scss";
+import $ from "jquery";
 import { Z_FIXED } from "zlib";
 
 class Canvas extends React.Component {
   componentDidMount() {
-    const c = this.refs.canvas;
-    const ctx = c.getContext("2d");
-    const img = this.refs.image;
+    var makeItRain = function() {
+      //clear out everything
+      $(".rain").empty();
 
-    img.onload = () => {
-      //chinese characters - taken from the unicode charset
-      var chinese =
-        "田由甲申甴电甶男甸甹町画甼甽甾甿畀畁畂畃畄畅畆畇畈畉畊畋界畍畎畏畐畑";
-      //converting the string into an array of single characters
-      chinese = chinese.split("");
+      var increment = 0;
+      var drops = "";
+      var backDrops = "";
 
-      var font_size = 10;
-      var columns = c.width / font_size; //number of columns for the rain
-      //an array of drops - one per column
-      var drops = [];
-      //x below is the x coordinate
-      //1 = y co-ordinate of the drop(same for every drop initially)
-      for (var x = 0; x < columns; x++) drops[x] = 1;
-
-      //drawing the characters
-      function draw() {
-        //Black BG for the canvas
-        //translucent BG to show trail
-        ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
-        ctx.fillRect(0, 0, c.width, c.height);
-
-        ctx.fillStyle = "#0F0"; //green text
-        ctx.font = font_size + "px arial";
-        //looping over drops
-        for (var i = 0; i < drops.length; i++) {
-          //a random chinese character to print
-          var text = chinese[Math.floor(Math.random() * chinese.length)];
-          //x = i*font_size, y = value of drops[i]*font_size
-          ctx.fillText(text, i * font_size, drops[i] * font_size);
-
-          //sending the drop back to the top randomly after it has crossed the screen
-          //adding a randomness to the reset to make the drops scattered on the Y axis
-          if (drops[i] * font_size > c.height && Math.random() > 0.975)
-            drops[i] = 0;
-
-          //incrementing Y coordinate
-          drops[i]++;
-        }
+      while (increment < 100) {
+        //couple random numbers to use for various randomizations
+        //random number between 98 and 1
+        var randoHundo = Math.floor(Math.random() * (98 - 1 + 1) + 1);
+        //random number between 5 and 2
+        var randoFiver = Math.floor(Math.random() * (5 - 2 + 1) + 2);
+        //increment
+        increment += randoFiver;
+        //add in a new raindrop with various randomizations to certain CSS properties
+        drops +=
+          '<div class="drop" style="left: ' +
+          increment +
+          "%; bottom: " +
+          (randoFiver + randoFiver - 1 + 100) +
+          "%; animation-delay: 0." +
+          randoHundo +
+          "s; animation-duration: 0.5" +
+          randoHundo +
+          's;"><div class="stem" style="animation-delay: 0.' +
+          randoHundo +
+          "s; animation-duration: 0.5" +
+          randoHundo +
+          's;"></div><div class="splat" style="animation-delay: 0.' +
+          randoHundo +
+          "s; animation-duration: 0.5" +
+          randoHundo +
+          's;"></div></div>';
+        backDrops +=
+          '<div class="drop" style="right: ' +
+          increment +
+          "%; bottom: " +
+          (randoFiver + randoFiver - 1 + 100) +
+          "%; animation-delay: 0." +
+          randoHundo +
+          "s; animation-duration: 0.5" +
+          randoHundo +
+          's;"><div class="stem" style="animation-delay: 0.' +
+          randoHundo +
+          "s; animation-duration: 0.5" +
+          randoHundo +
+          's;"></div><div class="splat" style="animation-delay: 0.' +
+          randoHundo +
+          "s; animation-duration: 0.5" +
+          randoHundo +
+          's;"></div></div>';
       }
 
-      setInterval(draw, 33);
-
-      /*   ctx.drawImage(img, 0, 0);
-      ctx.font = "40px Courier";
-      ctx.fillText(this.props.text, 210, 75); */
+      $(".rain.front-row").append(drops);
+      $(".rain.back-row").append(backDrops);
     };
+
+    $(".splat-toggle.toggle").on("click", function() {
+      $("body").toggleClass("splat-toggle");
+      $(".splat-toggle.toggle").toggleClass("active");
+      makeItRain();
+    });
+
+    $(".back-row-toggle.toggle").on("click", function() {
+      $("body").toggleClass("back-row-toggle");
+      $(".back-row-toggle.toggle").toggleClass("active");
+      makeItRain();
+    });
+
+    $(".single-toggle.toggle").on("click", function() {
+      $("body").toggleClass("single-toggle");
+      $(".single-toggle.toggle").toggleClass("active");
+      makeItRain();
+    });
+
+    makeItRain();
   }
 
   render() {
-    var cheese = "https://i.imgur.com/TCpuNfC.jpg";
     return (
-      <div>
-        <canvas ref="canvas" width={375} height={667} />
-        <img ref="image" src={cheese} className="hidden" />
-      </div>
+      <>
+        <div className="rain front-row" />
+        <div className="rain back-row" />
+      </>
     );
   }
 }

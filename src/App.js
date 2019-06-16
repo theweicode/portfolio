@@ -24,7 +24,13 @@ class App extends Component {
   }
 
   scrollTo() {
-    scroll.scrollTo(1640);
+    scroll.scrollTo(800);
+  }
+  scrollTop() {
+    scroll.scrollToTop();
+  }
+  scrollToDemos() {
+    scroll.scrollTo(1600);
   }
 
   render() {
@@ -38,17 +44,32 @@ class App extends Component {
               <div className="btn" onClick={this.scrollTo}>
                 View my work <i className="fas fa-arrow-right" />
               </div>
+              <Canvas />
             </div>
           </div>
-          <Canvas />
+
           <div className="abt-sct">
             <div className="title">
               ABOUT <br /> <div className="line">_____</div>
-              <div className="box-1">box1</div>
-              <div className="box-2">box2</div>
-              <div className="box-3">box3</div>
-              <div className="box-4">box4</div>
-              <div className="box-5">box5</div>
+            </div>
+            <div className="box-1">
+              <i class="fab fa-node" />
+              NodeJS
+            </div>
+            <div className="box-2">
+              <i class="fab fa-react" />
+              ReactJS
+            </div>
+            <div className="box-3">
+              <i class="fab fa-sass" />
+              UI Design
+            </div>
+            <div className="box-4">
+              <i class="fas fa-database" />
+              SQL - RESTful
+            </div>
+            <div className="box-5" onClick={this.scrollToDemos}>
+              View Live Demos <i className="fas fa-arrow-right" />
             </div>
           </div>
           <div className="projects">

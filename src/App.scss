@@ -13,6 +13,7 @@
 // Small devices (landscape phones, 576px and up) (tablet)
 @media (max-width: 666px) {
 
+
     .wrapper {
         background: gray;
         width: 100%;
@@ -21,7 +22,7 @@
         /* height: 100vh; */
         .header {
 
-            height: 667px;
+            height: 800px;
             color: white;
             background: #252934;
             display: grid;
@@ -68,6 +69,7 @@
                     position: relative;
                     text-align: center;
                     font-size: 14pt;
+                    z-index: 2;
                 }
             }
         }
@@ -80,12 +82,12 @@
     .abt-sct {
 
 
-        height: 667px;
+        height: 800px;
         color: 252934;
         background: #ffffff;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto;
+        grid-template-rows: 200px 200px 150px 100px;
 
         .title {
             grid-column: 5 /8;
@@ -94,8 +96,11 @@
             position: relative;
             color: #444649;
             font-weight: 1000;
-
+            top: 50px;
             position: relative;
+
+
+
 
             .line {
                 font-size: 25px;
@@ -105,39 +110,81 @@
             }
         }
 
+        .btn {}
+
         .box-1 {
             height: 100px;
             width: 100px;
-            background: red;
-            grid-column: 2 / 6
+            background: #252934;
+
+            grid-column: 2 / 6;
+
+            i {
+                color: #43853d;
+                font-size: 5em;
+                margin-top: 12px;
+            }
         }
 
         .box-2 {
             height: 100px;
             width: 100px;
-            background: yellow;
-            grid-column: 7 / 11
+            background: #282c34;
+
+            grid-column: 8 / 11;
+
+            i {
+                color: #61dafb;
+                font-size: 6em;
+
+            }
         }
 
         .box-3 {
             height: 100px;
             width: 100px;
             background: black;
-            grid-column: 2 / 6
+            grid-column: 2 / 6;
+
+            i {
+                color: #ce679a;
+                font-size: 5em;
+                margin-top: 12px;
+            }
         }
 
         .box-4 {
             height: 100px;
             width: 100px;
             background: green;
-            grid-column: 7 / 11
+            grid-column: 8 / 11;
+
+            i {
+                color: #43853d;
+                font-size: 5em;
+            }
         }
 
         .box-5 {
-            height: 100px;
-            width: 100px;
+
             background: brown;
-            grid-column: 4 / 9
+            grid-column: 2 / 11;
+            color: black;
+            border: 2px solid black;
+            padding: 20px;
+            position: relative;
+            margin-bottom: 40px;
+            width: auto;
+            cursor: pointer;
+            transition: all .5s;
+            line-height: 11pt;
+            font-family: 'Raleway';
+            align-items: center;
+            align-content: center;
+            position: relative;
+            text-align: center;
+            font-size: 14pt;
+            z-index: 2;
         }
     }
 
