@@ -50,23 +50,25 @@ class App extends Component {
 
           <div className="abt-sct">
             <div className="title">
-              ABOUT <br /> <div className="line">_____</div>
+              ABOUT <br /> <div className="line">________</div>
             </div>
             <div className="box-1">
-              <i class="fab fa-node" />
-              NodeJS
+              <span>
+                <i class="fab fa-node" />
+                <div className="label">NodeJS</div>
+              </span>
             </div>
             <div className="box-2">
               <i class="fab fa-react" />
-              ReactJS
+              <div className="label">ReactJS</div>
             </div>
             <div className="box-3">
               <i class="fab fa-sass" />
-              UI Design
+              <div className="label">UI Design</div>
             </div>
             <div className="box-4">
-              <i class="fas fa-database" />
-              SQL - RESTful
+              <i className="fas fa-cloud"> </i>
+              <div className="label">RESTful</div>
             </div>
             <div className="box-5" onClick={this.scrollToDemos}>
               View Live Demos <i className="fas fa-arrow-right" />

@@ -1,3 +1,13 @@
+@keyframes moveRight {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 80px, 0);
+    }
+}
+
 * {
     font-family: Raleway;
     margin: 0;
@@ -90,15 +100,17 @@
         grid-template-rows: 200px 200px 150px 100px;
 
         .title {
-            grid-column: 5 /8;
+
+            grid-column: 1 /13;
             font-size: 25pt;
-            font-family: 'raleway-bold';
+            font-family: 'raleway';
             position: relative;
             color: #444649;
             font-weight: 1000;
-            top: 50px;
+            margin-top: 50px;
             position: relative;
-
+            text-align: center;
+            background: #ffff;
 
 
 
@@ -106,7 +118,8 @@
                 font-size: 25px;
                 font-family: "raleway-bold";
                 font-weight: 1000;
-                margin-left: 30px;
+
+                text-align: center;
             }
         }
 
@@ -116,20 +129,31 @@
             height: 100px;
             width: 100px;
             background: #252934;
-
+            border-radius: 23px 23px 23px 23px;
+            -moz-border-radius: 23px 23px 23px 23px;
+            -webkit-border-radius: 23px 23px 23px 23px;
+            border: 0px solid #000000;
             grid-column: 2 / 6;
+            animation: moveRight .7s ease-in-out infinite alternate forwards running;
 
-            i {
+
+
+            .fa-node {
                 color: #43853d;
                 font-size: 5em;
                 margin-top: 12px;
+
             }
+
         }
 
         .box-2 {
             height: 100px;
             width: 100px;
-            background: #282c34;
+            background: #272c35;
+            border-radius: 23px 23px 23px 23px;
+            -moz-border-radius: 23px 23px 23px 23px;
+            -webkit-border-radius: 23px 23px 23px 23px;
 
             grid-column: 8 / 11;
 
@@ -143,7 +167,10 @@
         .box-3 {
             height: 100px;
             width: 100px;
-            background: black;
+            background: #272c35;
+            border-radius: 23px 23px 23px 23px;
+            -moz-border-radius: 23px 23px 23px 23px;
+            -webkit-border-radius: 23px 23px 23px 23px;
             grid-column: 2 / 6;
 
             i {
@@ -156,12 +183,16 @@
         .box-4 {
             height: 100px;
             width: 100px;
-            background: green;
+            background: #272c35;
+            border-radius: 23px 23px 23px 23px;
+            -moz-border-radius: 23px 23px 23px 23px;
+            -webkit-border-radius: 23px 23px 23px 23px;
             grid-column: 8 / 11;
 
             i {
                 color: #43853d;
                 font-size: 5em;
+                padding: 5px 0px;
             }
         }
 
@@ -188,7 +219,10 @@
         }
     }
 
-
+    .label {
+        margin-top: 20px;
+        text-align: center;
+    }
 
 
 
