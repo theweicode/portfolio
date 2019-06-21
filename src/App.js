@@ -39,8 +39,8 @@ class App extends Component {
         <div className="wrapper">
           <div className="header">
             <div className="mobile-home">
-              Hello, I'm <text className="name">William Ting</text>. <br /> I'm
-              a fullstack web developer.
+              Hello, I'm <text className="name">Mike Lowry</text>. <br /> I'm a
+              fullstack web developer.
               <div className="btn" onClick={this.scrollTo}>
                 View my work <i className="fas fa-arrow-right" />
               </div>
@@ -68,10 +68,10 @@ class App extends Component {
             </div>
             <div className="box-4">
               <i className="fas fa-cloud"> </i>
-              <div className="label">RESTful</div>
+              <div className="label">RESTful - SQL</div>
             </div>
-            <div className="box-5" onClick={this.scrollToDemos}>
-              View Live Demos <i className="fas fa-arrow-right" />
+            <div className="btn" onClick={this.scrollToDemos}>
+              View live demos <i className="fas fa-arrow-right" />
             </div>
           </div>
           <div className="projects">

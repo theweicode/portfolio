@@ -8,22 +8,29 @@
     }
 }
 
+@keyframes slidein {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 800px, 0);
+    }
+}
+
 * {
     font-family: Raleway;
     margin: 0;
 }
-
-
 
 .fas {
     color: red;
     font-size: 14px;
 }
 
+
 // Small devices (landscape phones, 576px and up) (tablet)
 @media (max-width: 666px) {
-
-
     .wrapper {
         background: gray;
         width: 100%;
@@ -31,15 +38,12 @@
 
         /* height: 100vh; */
         .header {
-
             height: 800px;
             color: white;
             background: #252934;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
             grid-template-rows: auto;
-
-
 
             /*     grid-auto-rows: minmax(50px, 667); */
             /*Justify Items align the content inside the grid boxes horizontal */
@@ -50,12 +54,13 @@
             grid-row-gap: 20px; */
             /*  grid-gap: 20px */
             .mobile-home {
-
                 font-size: 21px;
                 margin-left: 45px;
 
+
+
                 .name {
-                    color: #e31b6d
+                    color: #e31b6d;
                 }
 
                 grid-column: 2 / 12;
@@ -71,9 +76,9 @@
                     margin-bottom: 53px;
                     width: 160px;
                     cursor: pointer;
-                    transition: all .5s;
+                    transition: all 0.5s;
                     line-height: 11pt;
-                    font-family: 'Raleway';
+                    font-family: "Raleway";
                     align-items: center;
                     align-content: center;
                     position: relative;
@@ -90,20 +95,18 @@
     }
 
     .abt-sct {
-
-
         height: 800px;
         color: 252934;
         background: #ffffff;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 200px 200px 150px 100px;
+        grid-template-rows: 180px 210px 105px 100px;
 
         .title {
-
             grid-column: 1 /13;
+            grid-row: 1 / 2;
             font-size: 25pt;
-            font-family: 'raleway';
+            font-family: "raleway";
             position: relative;
             color: #444649;
             font-weight: 1000;
@@ -111,8 +114,6 @@
             position: relative;
             text-align: center;
             background: #ffff;
-
-
 
             .line {
                 font-size: 25px;
@@ -123,98 +124,98 @@
             }
         }
 
-        .btn {}
-
         .box-1 {
             height: 100px;
-            width: 100px;
+            width: 105px;
             background: #252934;
             border-radius: 23px 23px 23px 23px;
             -moz-border-radius: 23px 23px 23px 23px;
             -webkit-border-radius: 23px 23px 23px 23px;
             border: 0px solid #000000;
-            grid-column: 2 / 6;
-            animation: moveRight .7s ease-in-out infinite alternate forwards running;
+            grid-column: 3 / 6;
+            grid-row: 2 / 3;
 
-
-
+            /*   animation: moveRight 0.7s ease-in-out infinite alternate forwards running;
+ */
             .fa-node {
                 color: #43853d;
                 font-size: 5em;
                 margin-top: 12px;
-
+                padding: 0px 5px;
             }
-
         }
 
         .box-2 {
             height: 100px;
-            width: 100px;
+            width: 105px;
             background: #272c35;
             border-radius: 23px 23px 23px 23px;
             -moz-border-radius: 23px 23px 23px 23px;
             -webkit-border-radius: 23px 23px 23px 23px;
 
             grid-column: 8 / 11;
+            grid-row: 2 / 3;
 
             i {
                 color: #61dafb;
                 font-size: 6em;
-
+                padding: 0px 5px;
             }
         }
 
         .box-3 {
             height: 100px;
-            width: 100px;
+            width: 105px;
             background: #272c35;
             border-radius: 23px 23px 23px 23px;
             -moz-border-radius: 23px 23px 23px 23px;
             -webkit-border-radius: 23px 23px 23px 23px;
-            grid-column: 2 / 6;
+            grid-column: 3 / 6;
 
             i {
                 color: #ce679a;
                 font-size: 5em;
                 margin-top: 12px;
+                padding: 0px 3px;
             }
         }
 
         .box-4 {
             height: 100px;
-            width: 100px;
+            width: 105px;
             background: #272c35;
             border-radius: 23px 23px 23px 23px;
             -moz-border-radius: 23px 23px 23px 23px;
             -webkit-border-radius: 23px 23px 23px 23px;
-            grid-column: 8 / 11;
+            grid-column: 8 / 12;
 
             i {
                 color: #43853d;
                 font-size: 5em;
-                padding: 5px 0px;
+                padding: 5px 3px;
             }
         }
 
-        .box-5 {
-
-            background: brown;
+        .btn {
+            top: 38px;
+            left: 59px;
             grid-column: 2 / 11;
-            color: black;
-            border: 2px solid black;
-            padding: 20px;
+            grid-row: 3 /4;
+            color: #0070c9;
+            border: 3px solid black;
+            padding: 9px;
             position: relative;
-            margin-bottom: 40px;
-            width: auto;
+            margin-bottom: 60px;
+            width: 166px;
             cursor: pointer;
-            transition: all .5s;
-            line-height: 11pt;
-            font-family: 'Raleway';
+            transition: all 0.5s;
+            line-height: 15pt;
+            font-family: "Raleway";
             align-items: center;
             align-content: center;
             position: relative;
             text-align: center;
-            font-size: 14pt;
+            font-size: 13pt;
             z-index: 2;
         }
     }
@@ -222,10 +223,6 @@
     .label {
         margin-top: 20px;
         text-align: center;
+        font-weight: 550;
     }
-
-
-
-
-
 }
