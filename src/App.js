@@ -68,7 +68,7 @@ class App extends Component {
             </div>
             <div className="box-4">
               <i className="fas fa-cloud"> </i>
-              <div className="label">RESTful - SQL</div>
+              <div className="label">RESTful-SQL</div>
             </div>
             <div className="btn" onClick={this.scrollToDemos}>
               View live demos <i className="fas fa-arrow-right" />

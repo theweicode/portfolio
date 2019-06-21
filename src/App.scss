@@ -31,6 +31,13 @@
 
 // Small devices (landscape phones, 576px and up) (tablet)
 @media (max-width: 666px) {
+
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
     .wrapper {
         background: gray;
         width: 100%;
