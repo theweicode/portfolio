@@ -85,7 +85,8 @@ body.back-row-toggle .rain.back-row {
     opacity: 1;
     transform: scale(0);
     animation: splat 0.5s linear infinite;
-    display: none;
+    display: grid;
+    margin-top: 500px;
 }
 
 body.splat-toggle .splat {

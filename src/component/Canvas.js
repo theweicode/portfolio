@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Canvas.scss";
+import "./Canvas.css";
 import $ from "jquery";
 import { Z_FIXED } from "zlib";
 

@@ -37,20 +37,21 @@ class App extends Component {
     return (
       <>
         <div className="wrapper">
+          <Canvas />
           <div className="header">
             <div className="mobile-home">
-              Hello, I'm <text className="name">Mike Lowry</text>. <br /> I'm a
+              Hello, I'm <text className="name">Will Ting</text>. <br /> I'm a
               fullstack web developer.
               <div className="btn" onClick={this.scrollTo}>
                 View my work <i className="fas fa-arrow-right" />
               </div>
-              <Canvas />
+              {/*  <Canvas /> */}
             </div>
           </div>
 
           <div className="abt-sct">
             <div className="title">
-              ABOUT <br /> <div className="line">________</div>
+              ABOUT <br /> <div className="line" />
             </div>
             <div className="box-1">
               <span>
