@@ -5,91 +5,69 @@ import { Z_FIXED } from "zlib";
 
 class Canvas extends React.Component {
   componentDidMount() {
-    var makeItRain = function() {
-      //clear out everything
-      $(".rain").empty();
+    $(document).ready(function() {
+      var canvas = $("#canvas")[0];
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight + 380;
 
-      var increment = 0;
-      var drops = "";
-      var backDrops = "";
+      if (canvas.getContext) {
+        var ctx = canvas.getContext("2d");
+        var w = canvas.width;
+        var h = canvas.height;
+        ctx.strokeStyle = "rgba(255,255,255,0.2)";
+        ctx.lineWidth = 1;
+        ctx.lineCap = "round";
 
-      while (increment < 100) {
-        //couple random numbers to use for various randomizations
-        //random number between 98 and 1
-        var randoHundo = Math.floor(Math.random() * (98 - 1 + 1) + 1);
-        //random number between 5 and 2
-        var randoFiver = Math.floor(Math.random() * (5 - 2 + 1) + 2);
-        //increment
-        increment += randoFiver;
-        //add in a new raindrop with various randomizations to certain CSS properties
-        drops +=
-          '<div class="drop" style="left: ' +
-          increment +
-          "%; bottom: " +
-          (randoFiver + randoFiver - 1 + 100) +
-          "%; animation-delay: 0." +
-          randoHundo +
-          "s; animation-duration: 0.5" +
-          randoHundo +
-          's;"><div class="stem" style="animation-delay: 0.' +
-          randoHundo +
-          "s; animation-duration: 0.5" +
-          randoHundo +
-          's;"></div><div class="splat" style="animation-delay: 0.' +
-          randoHundo +
-          "s; animation-duration: 0.5" +
-          randoHundo +
-          's;"></div></div>';
-        backDrops +=
-          '<div class="drop" style="right: ' +
-          increment +
-          "%; bottom: " +
-          (randoFiver + randoFiver - 1 + 100) +
-          "%; animation-delay: 0." +
-          randoHundo +
-          "s; animation-duration: 0.5" +
-          randoHundo +
-          's;"><div class="stem" style="animation-delay: 0.' +
-          randoHundo +
-          "s; animation-duration: 0.5" +
-          randoHundo +
-          's;"></div><div class="splat" style="animation-delay: 0.' +
-          randoHundo +
-          "s; animation-duration: 0.5" +
-          randoHundo +
-          's;"></div></div>';
+        var init = [];
+        var maxParts = 1000;
+        for (var a = 0; a < maxParts; a++) {
+          init.push({
+            x: Math.random() * w,
+            y: Math.random() * h,
+            l: Math.random() * 1,
+            xs: -4 + Math.random() * 4 + 2,
+            ys: Math.random() * 10 + 10
+          });
+        }
+
+        var particles = [];
+        for (var b = 0; b < maxParts; b++) {
+          particles[b] = init[b];
+        }
+
+        function draw() {
+          ctx.clearRect(0, 0, w, h);
+          for (var c = 0; c < particles.length; c++) {
+            var p = particles[c];
+            ctx.beginPath();
+            ctx.moveTo(p.x, p.y);
+            ctx.lineTo(p.x + p.l * p.xs, p.y + p.l * p.ys);
+            ctx.stroke();
+          }
+          move();
+        }
+
+        function move() {
+          for (var b = 0; b < particles.length; b++) {
+            var p = particles[b];
+            p.x += p.xs;
+            p.y += p.ys;
+            if (p.x > w || p.y > h) {
+              p.x = Math.random() * w;
+              p.y = -20;
+            }
+          }
+        }
+
+        setInterval(draw, 30);
       }
-
-      $(".rain.front-row").append(drops);
-      $(".rain.back-row").append(backDrops);
-    };
-
-    $(".splat-toggle.toggle").on("click", function() {
-      $("body").toggleClass("splat-toggle");
-      $(".splat-toggle.toggle").toggleClass("active");
-      makeItRain();
     });
-
-    $(".back-row-toggle.toggle").on("click", function() {
-      $("body").toggleClass("back-row-toggle");
-      $(".back-row-toggle.toggle").toggleClass("active");
-      makeItRain();
-    });
-
-    $(".single-toggle.toggle").on("click", function() {
-      $("body").toggleClass("single-toggle");
-      $(".single-toggle.toggle").toggleClass("active");
-      makeItRain();
-    });
-
-    makeItRain();
   }
 
   render() {
     return (
       <>
-        <div className="rain front-row" />
-        <div className="rain back-row" />
+        <canvas id="canvas" />
       </>
     );
   }
