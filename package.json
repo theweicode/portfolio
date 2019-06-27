@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "portfolio-cr-rct-app",
   "version": "0.1.0",
   "private": true,
@@ -9,6 +10,19 @@
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8"
+=======
+  "name": "new_portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/free-regular-svg-icons": "^5.9.0",
+    "jquery": "^3.4.1",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "3.0.1",
+    "react-scroll": "^1.7.12"
+>>>>>>> 0d177033db34486ae9aa64c5f104c2d9df90a34d
   },
   "scripts": {
     "start": "react-scripts start",
@@ -19,6 +33,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+<<<<<<< HEAD
   "browserslist": [
     ">0.2%",
     "not dead",
@@ -29,3 +44,18 @@
     "node-sass": "^4.12.0"
   }
 }
+=======
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
+>>>>>>> 0d177033db34486ae9aa64c5f104c2d9df90a34d
