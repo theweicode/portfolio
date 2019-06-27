@@ -1,6 +1,5 @@
 @keyframes flash {
   from {
-
     color: #0070c9;
     border: 2px solid #0070c9;
   }
@@ -41,10 +40,8 @@
   font-size: 14px;
 }
 
-
 // Small devices (landscape phones, 576px and up) (tablet)
 @media (max-width: 666px) {
-
   html,
   body {
     max-width: 100%;
@@ -53,7 +50,7 @@
   }
 
   .wrapper {
-    background: gray;
+    background: white;
     width: 100%;
     position: relative;
 
@@ -171,8 +168,6 @@
     }
 
     .btn {
-
-
       padding: 10px 10px 0px 10px;
       grid-column: 6 / 13;
       top: 90vh;
@@ -203,7 +198,7 @@
     background: #ffffff;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 80px 100px 100px 100px 100px;
+    grid-template-rows: 60px 250px 60px 100px 50px 140px 100px;
 
     .title {
       grid-column: 1 /13;
@@ -222,8 +217,32 @@
       margin: 0;
 
       .line {
-        margin-left: 113px;
+        margin-left: 72px;
         margin-top: 12px;
+        background: black;
+        width: 230px;
+        height: 4px;
+      }
+    }
+
+    .stack {
+      grid-column: 1 /13;
+      grid-row: 3 / 4;
+      font-size: 25pt;
+      top: 10px;
+      left: 0px;
+      font-family: "raleway";
+      position: relative;
+      color: #444649;
+      font-weight: 700;
+      position: relative;
+      text-align: center;
+      background: #ffff;
+      margin: 0;
+
+      .line {
+        margin-left: 116px;
+        margin-top: 4px;
         background: black;
         width: 150px;
         height: 4px;
@@ -242,94 +261,105 @@
       margin-top: 20px;
     }
 
-    .realEstate{
+    .realEstate {
       grid-row: 2/3;
       grid-column: 1 /5;
       margin-top: 15px;
-      
     }
 
     .box-1 {
-      height: 100px;
-      width: 105px;
+      height: 75px;
+      width: 80px;
+      margin-left: 10px;
       margin-top: 15px;
       background: #252934;
       border-radius: 23px 23px 23px 23px;
       -moz-border-radius: 23px 23px 23px 23px;
       -webkit-border-radius: 23px 23px 23px 23px;
       border: 0px solid #000000;
-      grid-column: 3 / 6;
-      grid-row: 3 / 4;
+      grid-column: 1 / 2;
+      grid-row: 4 / 5;
 
       /*   animation: moveRight 0.7s ease-in-out infinite alternate forwards running;
  */
       .fa-node {
         color: #43853d;
-        font-size: 5em;
+        font-size: 3.7em;
         margin-top: 12px;
         padding: 0px 5px;
       }
     }
 
     .box-2 {
-      height: 100px;
-      width: 105px;
+      height: 75px;
+      width: 80px;
       margin-top: 15px;
       background: #272c35;
       border-radius: 23px 23px 23px 23px;
       -moz-border-radius: 23px 23px 23px 23px;
       -webkit-border-radius: 23px 23px 23px 23px;
 
-      grid-column: 8 / 11;
-      grid-row: 3 / 4;
+      grid-column: 3 / 4;
+      grid-row: 4 / 5;
 
       i {
         color: #61dafb;
-        font-size: 6em;
+        font-size: 4.5em;
         padding: 0px 5px;
       }
     }
 
     .box-3 {
-      height: 100px;
-      width: 105px;
+      height: 75px;
+      margin-top: 12px;
+      width: 80px;
       background: #272c35;
       border-radius: 23px 23px 23px 23px;
       -moz-border-radius: 23px 23px 23px 23px;
       -webkit-border-radius: 23px 23px 23px 23px;
-      grid-column: 3 / 6;
+      grid-column: 5 / 6;
       grid-row: 4 / 5;
 
       i {
         color: #ce679a;
-        font-size: 5em;
+        font-size: 3.8em;
         margin-top: 12px;
         padding: 0px 3px;
       }
     }
 
     .box-4 {
-      height: 100px;
-      width: 105px;
+      height: 75px;
+      width: 80px;
+      margin-top: 12px;
       background: #272c35;
       border-radius: 23px 23px 23px 23px;
       -moz-border-radius: 23px 23px 23px 23px;
       -webkit-border-radius: 23px 23px 23px 23px;
-      grid-column: 8 / 12;
+      grid-column: 7 / 8;
       grid-row: 4 / 5;
 
       i {
         color: #43853d;
-        font-size: 5em;
+        font-size: 3.7em;
         padding: 5px 3px;
       }
     }
 
+    .realDesc {
+      grid-column: 1 / 13;
+      grid-row: 6 / 7;
+      font-size: 12pt;
+      font-family: "raleway";
+      margin-left: 20px;
+      margin-right: 25px;
+      text-align: justify;
+    }
+
     .btn {
-      top: 60px;
       left: 59px;
       grid-column: 2 / 11;
-      grid-row: 4 /5;
+      grid-row: 7 / 8;
       color: #0070c9;
       border: 3px solid black;
       padding: 9px;
@@ -346,6 +376,7 @@
       text-align: center;
       font-size: 14pt;
       z-index: 2;
+      text-decoration: none;
     }
   }
 

@@ -57,18 +57,20 @@ class App extends Component {
             <div className="line" />
             <div className="vert-line" />
             <div className="intro">
-<<<<<<< HEAD
               Mission-driven full stack developer with a passion for thoughtful
               UI Design, collaboration, and teaching.
-=======
-              Mission-driven full stack developer with a passion for thoughtful UI
-              Design, collaboration, and teaching.
->>>>>>> 77ddc80f4f290d923cbf24fae15600079584c0ec
             </div>
             <div className="para">
-            I’m a full stack software developer with professional SQL administration and WebOps experience in large corporate and small family tech companies. I cut my teeth in IT Support demonstrating a long history of customer focus, attention to detail, patience, accuracy, and time management. My passion for software developer stems from my experience in IT Support, where I realized I wanted to make significant differences for my company. I’m well versed in the latest front end tech trends including NodeJS, React, Rest API, CSS Grid / Flex and many more.
-I'm excited to
-              make a big impact at a high growth company.
+              I’m a full stack software developer with professional SQL
+              administration and WebOps experience in large corporate and small
+              family tech companies. I cut my teeth in IT Support demonstrating
+              a long history of customer focus, attention to detail, patience,
+              accuracy, and time management. My passion for software developer
+              stems from my experience in IT Support, where I realized I wanted
+              to make significant differences for my company. I’m well versed in
+              the latest front end tech trends including NodeJS, React, Rest
+              API, CSS Grid / Flex and many more. I'm excited to make a big
+              impact at a high growth company.
             </div>
             <div className="btn" onClick={this.scrollToDemos}>
               View my projects <i className="fas fa-arrow-right" />
@@ -77,11 +79,19 @@ I'm excited to
 
           <div className="tech">
             <div className="title">
-            Real Estate App <br /> <div className="line" />
+              Real Estate App <br /> <div className="line" />
             </div>
             <div className="front">Front End</div>
             <div className="back">Back End</div>
-            <img src="https://i.imgur.com/6LZFOVs.png" width="375" height="234" className="realEstate" />
+            <img
+              src="https://i.imgur.com/6LZFOVs.png"
+              width="375"
+              height="234"
+              className="realEstate"
+            />
+            <div className="stack">
+              Tech Stack <br /> <div className="line" />
+            </div>
             <div className="box-1">
               <span>
                 <i class="fab fa-node" />
@@ -100,12 +110,19 @@ I'm excited to
               <i className="fas fa-cloud"> </i>
               <div className="label">RESTful-SQL</div>
             </div>
-            <div className="btn" onClick={this.scrollToDemos}>
-              View live demos <i className="fas fa-arrow-right" />
+            <div className="realDesc">
+              I build this project from scratch using NodeJS backend along with
+              ReactJS framekwork and custom the layout using advanced CSS
+              techniques such as Flexbox, Grid, transitions, and animations.I
+              also leveraged Google's cloud database Firecloud to allow users to
+              login.
             </div>
-          </div>
-          <div className="projects">
-            Project-Section<div className="real-estate">REAL ESTATE APP</div>
+            <a
+              className="btn"
+              href="https://master.d716ee3k2f9g4.amplifyapp.com/"
+            >
+              View live demos <i className="fas fa-arrow-right" />
+            </a>
           </div>
         </div>
       </>
