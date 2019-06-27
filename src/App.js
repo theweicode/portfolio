@@ -57,8 +57,8 @@ class App extends Component {
             <div className="line" />
             <div className="vert-line" />
             <div className="intro">
-              Mission-driven full stack developer with a paion for thoughtful UI
-              Design, collaboration, and teaching.
+              Mission-driven full stack developer with a passion for thoughtful
+              UI Design, collaboration, and teaching.
             </div>
             <div className="para">
               I've always sought out opportunities and challenges that are
