@@ -142,7 +142,7 @@
     }
 
     .vert-line {
-      margin-top: 20px;
+      margin-top: 25px;
       margin-left: 30px;
       width: 5px;
       grid-column: 1 / 2;
@@ -153,8 +153,8 @@
     .intro {
       grid-column: 3 / 13;
       grid-row: 2 / 4;
-      margin-top: 10px;
-      font-size: 1.4em;
+      margin-top: 15px;
+      font-size: 1.3em;
       font-family: "raleway";
       margin-left: 0px;
       line-height: 1.5em;
@@ -240,6 +240,13 @@
       grid-row: 2/3;
       grid-column: 10 / 13;
       margin-top: 20px;
+    }
+
+    .realEstate{
+      grid-row: 2/3;
+      grid-column: 1 /5;
+      margin-top: 15px;
+      
     }
 
     .box-1 {

@@ -57,32 +57,31 @@ class App extends Component {
             <div className="line" />
             <div className="vert-line" />
             <div className="intro">
+<<<<<<< HEAD
               Mission-driven full stack developer with a passion for thoughtful
               UI Design, collaboration, and teaching.
+=======
+              Mission-driven full stack developer with a passion for thoughtful UI
+              Design, collaboration, and teaching.
+>>>>>>> 77ddc80f4f290d923cbf24fae15600079584c0ec
             </div>
             <div className="para">
-              I've always sought out opportunities and challenges that are
-              meaningful to me. Although myp professional path has taken many
-              twists and turns - from touring and recording artist, to employee
-              of the year at a non-profit, to dean's scholar at UPenn, to small
-              business owner and entrepreneur - I've never stopped engaging my
-              passion to help others and solve problems. <br /> As a web
-              developer, I enjoy using my obsessive attention to detail, my
-              unequivocal love for making things, and my mission-driven work
-              ethic to literally change the world. That's why I'm excited to
+            I’m a full stack software developer with professional SQL administration and WebOps experience in large corporate and small family tech companies. I cut my teeth in IT Support demonstrating a long history of customer focus, attention to detail, patience, accuracy, and time management. My passion for software developer stems from my experience in IT Support, where I realized I wanted to make significant differences for my company. I’m well versed in the latest front end tech trends including NodeJS, React, Rest API, CSS Grid / Flex and many more.
+I'm excited to
               make a big impact at a high growth company.
             </div>
             <div className="btn" onClick={this.scrollToDemos}>
-              View live demos <i className="fas fa-arrow-right" />
+              View my projects <i className="fas fa-arrow-right" />
             </div>
           </div>
 
           <div className="tech">
             <div className="title">
-              TECH STACK <br /> <div className="line" />
+            Real Estate App <br /> <div className="line" />
             </div>
             <div className="front">Front End</div>
             <div className="back">Back End</div>
+            <img src="https://i.imgur.com/6LZFOVs.png" width="375" height="234" className="realEstate" />
             <div className="box-1">
               <span>
                 <i class="fab fa-node" />
