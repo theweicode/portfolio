@@ -78,17 +78,9 @@ class App extends Component {
           </div>
 
           <div className="tech">
-            <div className="title">
-              Real Estate App <br /> <div className="line" />
-            </div>
-            <div className="front">Front End</div>
-            <div className="back">Back End</div>
-            <img
-              src="https://i.imgur.com/6LZFOVs.png"
-              width="375"
-              height="234"
-              className="realEstate"
-            />
+            <div className="title">Real Estate App</div>
+
+            <img src="https://i.imgur.com/6LZFOVs.png" className="realEstate" />
             <div className="stack">
               Tech Stack <br /> <div className="line" />
             </div>
