@@ -10,26 +10,6 @@
   }
 }
 
-/* @keyframes moveRight {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-    transform: translate3d(0, 80px, 0);
-  }
-}
-
-@keyframes slidein {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-    transform: translate3d(0, 800px, 0);
-  }
-} */
-
 * {
   font-family: Raleway;
   margin: 0;
@@ -39,11 +19,6 @@
   color: red;
   font-size: 14px;
 }
-
-
-
-
-
 
 html,
 body {
@@ -83,7 +58,7 @@ body {
         z-index: 1;
       }
 
-      margin-top:50%;
+      margin-top: 50%;
       margin-left: 15%;
 
       grid-column: 5 / 12;
@@ -196,20 +171,66 @@ body {
   }
 }
 
+.backdrop {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  background-image: url("https://i.imgur.com/gxOiNMP.jpg");
+  margin-top: 200px;
+}
 
 .tech {
   height: 1200px;
   margin-top: 180px;
-  color: 252934;
+  color: #252934;
   background: #ffffff;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 60px 250px 60px 100px 50px 140px 100px;
+  grid-template-rows: 75px 275px 100px 100px 100px 100px 100px;
+  grid-row-gap: 10px;
 
-  img {
-    width: 1920px;
-    height: 1200px;
-    grid-row: 5 /6;
+  .description-real {
+    position: absolute;
+  }
+
+  .real-label {
+    font-size: 1.8em;
+    background-color: rgba(113, 128, 124, 0.8);
+  }
+
+  .realEstate {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+    z-index: 1;
+    img {
+      width: 500px;
+      height: 281.25px;
+    }
+  }
+
+  .realEstateipad {
+    grid-row: 2 /3;
+    grid-column: 5 / 6;
+    z-index: 1;
+
+    img {
+      width: 230.4px;
+      height: 307.2px;
+      margin-left: 7px;
+    }
+
+    /* Equal to scaleX(0.7) scaleY(0.7) */
+  }
+
+  .realEstateiphone {
+    grid-row: 2 /3;
+    grid-column: 7 / 8;
+    z-index: 1;
+
+    img {
+      width: 123.6px;
+      height: 219.6px;
+    }
   }
 
   .title {
@@ -217,7 +238,7 @@ body {
     grid-row: 1 / 2;
     font-size: 25pt;
     top: 10px;
-    left: 0px;
+    left: -20px;
     font-family: "raleway";
     position: relative;
     color: #444649;
@@ -227,16 +248,14 @@ body {
     text-align: center;
     background: #ffff;
     margin: 0;
-
-
   }
 
   .stack {
     grid-column: 1 /13;
-    grid-row: 3 / 4;
+    grid-row: 4 / 5;
     font-size: 25pt;
     top: 10px;
-    left: 0px;
+    left: -20px;
     font-family: "raleway";
     position: relative;
     color: #444649;
@@ -247,20 +266,12 @@ body {
     margin: 0;
 
     .line {
-      margin-left: 116px;
+      margin-left: 874px;
       margin-top: 4px;
       background: black;
       width: 150px;
       height: 4px;
     }
-  }
-
-
-
-  .realEstate {
-    grid-row: 2/3;
-    grid-column: 1 /7;
-    margin-top: 15px;
   }
 
   .box-1 {
@@ -273,8 +284,8 @@ body {
     -moz-border-radius: 23px 23px 23px 23px;
     -webkit-border-radius: 23px 23px 23px 23px;
     border: 0px solid #000000;
-    grid-column: 1 / 13;
-    grid-row: 4 / 5;
+    grid-column: 4/ 5;
+    grid-row: 5 / 6;
 
     /*   animation: moveRight 0.7s ease-in-out infinite alternate forwards running;
  */
@@ -295,8 +306,8 @@ body {
     -moz-border-radius: 23px 23px 23px 23px;
     -webkit-border-radius: 23px 23px 23px 23px;
 
-    grid-column: 3 / 4;
-    grid-row: 4 / 5;
+    grid-column: 5 / 6;
+    grid-row: 5 / 6;
 
     i {
       color: #61dafb;
@@ -308,13 +319,15 @@ body {
   .box-3 {
     height: 75px;
     margin-top: 12px;
+
     width: 80px;
     background: #272c35;
     border-radius: 23px 23px 23px 23px;
     -moz-border-radius: 23px 23px 23px 23px;
     -webkit-border-radius: 23px 23px 23px 23px;
-    grid-column: 5 / 6;
-    grid-row: 4 / 5;
+    grid-column: 6 / 7;
+    grid-row: 5 / 6;
+    margin-left: -140px;
 
     i {
       color: #ce679a;
@@ -328,12 +341,14 @@ body {
     height: 75px;
     width: 80px;
     margin-top: 12px;
+    margin-left: -50px;
     background: #272c35;
     border-radius: 23px 23px 23px 23px;
     -moz-border-radius: 23px 23px 23px 23px;
     -webkit-border-radius: 23px 23px 23px 23px;
     grid-column: 7 / 8;
-    grid-row: 4 / 5;
+    grid-row: 5 / 6;
+    margin-left: -160px;
 
     i {
       color: #43853d;
@@ -344,35 +359,33 @@ body {
 
   .realDesc {
     grid-column: 1 / 13;
-    grid-row: 6 / 7;
-    font-size: 12pt;
+    grid-row: 6 / 8;
+    font-size: 2em;
     font-family: "raleway";
     margin-left: 20px;
     margin-right: 25px;
+    margin-top: 50px;
     text-align: justify;
   }
 
   .btn {
-    left: 59px;
-    grid-column: 2 / 11;
+    left: 42%;
+    grid-column: 3 / 11;
     grid-row: 7 / 8;
     color: #0070c9;
     border: 3px solid black;
-    padding: 9px;
+    padding: 12px 12px 22px 12px;
     position: relative;
-    margin-bottom: 60px;
-    width: 166px;
+    margin-bottom: 45px;
+    width: 188px;
     cursor: pointer;
     transition: all 0.5s;
-    line-height: 15pt;
     font-family: "Raleway";
-    align-items: center;
-    align-content: center;
-    position: relative;
     text-align: center;
     font-size: 14pt;
     z-index: 2;
     text-decoration: none;
+    top: 100px;
   }
 }
 
@@ -382,17 +395,8 @@ body {
   font-weight: 550;
 }
 
-
-
-
-
-
-
-
-
 // Small devices (landscape phones, 576px and up) (tablet)
 @media (max-width: 666px) {
-
   html,
   body {
     max-width: 100%;
@@ -521,7 +525,8 @@ body {
     .btn {
       padding: 10px 10px 0px 10px;
       grid-column: 6 / 13;
-      top: 90vh;
+      grid-row: 4 / 5;
+      top: 0;
       height: 30px;
       width: 180px;
       cursor: pointer;
@@ -538,8 +543,13 @@ body {
     }
   }
 
-  .projects {
-    height: 100vh;
+  .backdrop {
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    background-image: url("https://i.imgur.com/gxOiNMP.jpg");
+    margin-top: 250px;
+    display: none;
   }
 
   .tech {
@@ -548,13 +558,8 @@ body {
     color: 252934;
     background: #ffffff;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 60px 250px 60px 100px 50px 140px 100px;
-
-    img {
-      width: 375px;
-      height: 234px;
-    }
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 60px 300px 60px 100px 50px 100px 30px 30px 50px 100px;
 
     .title {
       grid-column: 1 /13;
@@ -581,6 +586,54 @@ body {
       }
     }
 
+    .description-real {
+      position: absolute;
+    }
+
+    .real-label {
+      font-size: 1.8em;
+      background-color: rgba(113, 128, 124, 0.8);
+      display: none;
+    }
+
+    .realEstate {
+      grid-row: 2 / 3;
+      grid-column: 1 / 5;
+      z-index: 1;
+      img {
+        width: 500px;
+        height: 281.25px;
+      }
+    }
+
+    .realEstateipad {
+      display: none;
+      grid-row: 2 /3;
+      grid-column: 2 / 4;
+      z-index: 1;
+
+      img {
+        width: 153.33px;
+        height: 204.8px;
+      }
+
+      /* Equal to scaleX(0.7) scaleY(0.7) */
+    }
+
+    .realEstateiphone {
+      display: none;
+      grid-row: 2 /3;
+      grid-column: 4 / 10;
+      z-index: 1 img {
+
+      }
+    }
+
+    img {
+      width: 250px;
+      height: 156px;
+    }
+
     .stack {
       grid-column: 1 /13;
       grid-row: 3 / 4;
@@ -605,36 +658,16 @@ body {
       }
     }
 
-    .front {
-      grid-row: 2 /3;
-      grid-column: 2 / 13;
-      margin-top: 20px;
-    }
-
-    .back {
-      grid-row: 2/3;
-      grid-column: 10 / 13;
-      margin-top: 20px;
-    }
-
-    .realEstate {
-      grid-row: 2/3;
-      grid-column: 1 /5;
-      margin-top: 15px;
-    }
-
     .box-1 {
       height: 75px;
       width: 80px;
-      margin-left: 10px;
-      margin-top: 15px;
       background: #252934;
       border-radius: 23px 23px 23px 23px;
       -moz-border-radius: 23px 23px 23px 23px;
       -webkit-border-radius: 23px 23px 23px 23px;
       border: 0px solid #000000;
       grid-column: 1 / 2;
-      grid-row: 4 / 5;
+      grid-row: 4/ 5;
 
       /*   animation: moveRight 0.7s ease-in-out infinite alternate forwards running;
  */
@@ -649,14 +682,15 @@ body {
     .box-2 {
       height: 75px;
       width: 80px;
-      margin-top: 15px;
+
       background: #272c35;
       border-radius: 23px 23px 23px 23px;
       -moz-border-radius: 23px 23px 23px 23px;
       -webkit-border-radius: 23px 23px 23px 23px;
 
-      grid-column: 3 / 4;
-      grid-row: 4 / 5;
+      grid-column: 2 / 3;
+      grid-row: 4/ 5;
+      margin-left: 15px;
 
       i {
         color: #61dafb;
@@ -667,14 +701,15 @@ body {
 
     .box-3 {
       height: 75px;
-      margin-top: 12px;
+
       width: 80px;
       background: #272c35;
       border-radius: 23px 23px 23px 23px;
       -moz-border-radius: 23px 23px 23px 23px;
       -webkit-border-radius: 23px 23px 23px 23px;
-      grid-column: 5 / 6;
-      grid-row: 4 / 5;
+      grid-column: 3 / 4;
+      grid-row: 4/ 5;
+      margin-left: 20px;
 
       i {
         color: #ce679a;
@@ -687,16 +722,17 @@ body {
     .box-4 {
       height: 75px;
       width: 80px;
-      margin-top: 12px;
+
       background: #272c35;
       border-radius: 23px 23px 23px 23px;
       -moz-border-radius: 23px 23px 23px 23px;
       -webkit-border-radius: 23px 23px 23px 23px;
-      grid-column: 7 / 8;
-      grid-row: 4 / 5;
+      grid-column: 5 / 6;
+      grid-row: 4/ 5;
+      margin-left: 10px;
 
       i {
-        color: #43853d;
+        color: white;
         font-size: 3.7em;
         padding: 5px 3px;
       }
@@ -704,7 +740,7 @@ body {
 
     .realDesc {
       grid-column: 1 / 13;
-      grid-row: 6 / 7;
+      grid-row: 5 / 6;
       font-size: 12pt;
       font-family: "raleway";
       margin-left: 20px;
@@ -714,25 +750,22 @@ body {
 
     .btn {
       left: 59px;
-      grid-column: 2 / 11;
-      grid-row: 7 / 8;
+      grid-column: 2 / 5;
+      grid-row: 6 / 8;
       color: #0070c9;
       border: 3px solid black;
-      padding: 9px;
+      padding: 10px;
       position: relative;
-      margin-bottom: 60px;
+      height: 25px;
       width: 166px;
       cursor: pointer;
       transition: all 0.5s;
-      line-height: 15pt;
       font-family: "Raleway";
-      align-items: center;
-      align-content: center;
       position: relative;
-      text-align: center;
-      font-size: 14pt;
+      font-size: 1.2em;
       z-index: 2;
       text-decoration: none;
+      margin-top: 25px;
     }
   }
 

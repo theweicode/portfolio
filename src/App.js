@@ -41,7 +41,7 @@ class App extends Component {
           <div className="header">
             <Canvas />
             <div className="mobile-home">
-              Hello, I'm <text className="name">Will Ting</text>. <br /> I'm a
+              Hello, I'm <a className="name">Will Ting</a>. <br /> I'm a
               fullstack web developer.
               <div className="btn" onClick={this.scrollTo}>
                 View my work <i className="fas fa-arrow-right" />
@@ -76,26 +76,38 @@ class App extends Component {
               View my projects <i className="fas fa-arrow-right" />
             </div>
           </div>
-
+          <div className="backdrop" />
           <div className="tech">
             <div className="title">Real Estate App</div>
+            <div className="description-real" />
+            <div className="realEstate">
+              <img src="https://i.imgur.com/6LZFOVs.png" />
+              <h3 className="real-label">Desktop/Laptop</h3>
+            </div>
+            <div className="realEstateipad">
+              <img src="https://i.imgur.com/OmgSk6Y.png" />
+              <h3 className="real-label">Tablets</h3>
+            </div>
+            <div className="realEstateiphone">
+              <img src="https://i.imgur.com/tetH7KH.png" />
+              <h3 className="real-label">Phones</h3>
+            </div>
 
-            <img src="https://i.imgur.com/6LZFOVs.png" className="realEstate" />
             <div className="stack">
               Tech Stack <br /> <div className="line" />
             </div>
             <div className="box-1">
               <span>
-                <i class="fab fa-node" />
+                <i className="fab fa-node" />
                 <div className="label">NodeJS</div>
               </span>
             </div>
             <div className="box-2">
-              <i class="fab fa-react" />
+              <i className="fab fa-react" />
               <div className="label">ReactJS</div>
             </div>
             <div className="box-3">
-              <i class="fab fa-sass" />
+              <i className="fab fa-sass" />
               <div className="label">UI Design</div>
             </div>
             <div className="box-4">
@@ -103,11 +115,11 @@ class App extends Component {
               <div className="label">RESTful-SQL</div>
             </div>
             <div className="realDesc">
-              I build this project from scratch using NodeJS backend along with
-              ReactJS framekwork and custom the layout using advanced CSS
-              techniques such as Flexbox, Grid, transitions, and animations.I
-              also leveraged Google's cloud database Firecloud to allow users to
-              login.
+              I build this responsive project from scratch using the latest
+              frameworks including NodeJS backend along with ReactJS framework
+              and custom the layout using advanced CSS techniques such as
+              Flexbox, Grid, transitions, and animations.I also leveraged
+              Google's cloud database Firecloud to allow users to login.
             </div>
             <a
               className="btn"
