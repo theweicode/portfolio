@@ -5,19 +5,14 @@
   }
 
   to {
-    color: yellow;
-    border: 2px solid yellow;
+    color: orange;
+    border: 2px solid orange;
   }
 }
 
 * {
   font-family: Raleway;
   margin: 0;
-}
-
-.fas {
-  color: red;
-  font-size: 14px;
 }
 
 html,
@@ -153,8 +148,8 @@ body {
     padding: 10px 10px 0px 10px;
     grid-column: 7 / 13;
     grid-row: 8/9;
-    height: 30px;
-    width: 200px;
+    height: 40px;
+    width: 230px;
     cursor: pointer;
     transition: all 0.5s;
     line-height: 11pt;
@@ -165,18 +160,23 @@ body {
     text-align: center;
     font-size: 14pt;
     z-index: 2;
+    font-size: 1.5em;
     margin-left: 10px;
     margin-top: 50px;
-    animation: flash 2s ease-in infinite alternate forwards running;
+    animation: flash 1.6s ease-in-out infinite alternate forwards running;
+    .fa-arrow-right {
+      color: red;
+      font-size: 1.2em;
+    }
   }
 }
 
 .backdrop {
   width: 100%;
-  height: 500px;
+  height: 400px;
   position: absolute;
   background-image: url("https://i.imgur.com/gxOiNMP.jpg");
-  margin-top: 200px;
+  margin-top: 266px;
 }
 
 .tech {
@@ -189,13 +189,20 @@ body {
   grid-template-rows: 75px 275px 100px 100px 100px 100px 100px;
   grid-row-gap: 10px;
 
+  .logo {
+    height: 80px;
+    width: 80px;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+
   .description-real {
     position: absolute;
   }
 
   .real-label {
     font-size: 1.8em;
-    background-color: rgba(113, 128, 124, 0.8);
+    background-color: rgba(255, 113, 144, 0.8);
   }
 
   .realEstate {
@@ -234,18 +241,20 @@ body {
   }
 
   .title {
-    grid-column: 1 /13;
+    grid-column: 1/11;
     grid-row: 1 / 2;
     font-size: 25pt;
     top: 10px;
-    left: -20px;
+    border: 0px solid #000000;
+    left: 100px;
     font-family: "raleway";
     position: relative;
     color: #444649;
-    font-weight: 700;
-    margin-top: 50px;
+    font-size: 4em;
+    font-weight: 505;
+    margin-top: 40px;
     position: relative;
-    text-align: center;
+    text-align: left;
     background: #ffff;
     margin: 0;
   }
@@ -594,6 +603,7 @@ body {
       font-size: 1.8em;
       background-color: rgba(113, 128, 124, 0.8);
       display: none;
+      font-family: "raleway";
     }
 
     .realEstate {

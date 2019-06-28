@@ -1,15 +1,6 @@
 import React, { Component } from "react";
 import "./App.scss";
-
-import * as Scroll from "react-scroll";
-import {
-  Link,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller
-} from "react-scroll";
+import { animateScroll as scroll } from "react-scroll";
 
 import Canvas from "./component/Canvas";
 
@@ -78,19 +69,20 @@ class App extends Component {
           </div>
           <div className="backdrop" />
           <div className="tech">
+            <img src="https://i.imgur.com/b0sEJQt.png" className="logo" />
             <div className="title">Real Estate App</div>
             <div className="description-real" />
             <div className="realEstate">
               <img src="https://i.imgur.com/6LZFOVs.png" />
-              <h3 className="real-label">Desktop/Laptop</h3>
+              <h3 className="real-label">Responsive Designs</h3>
             </div>
             <div className="realEstateipad">
               <img src="https://i.imgur.com/OmgSk6Y.png" />
-              <h3 className="real-label">Tablets</h3>
+              <h3 className="real-label">Across</h3>
             </div>
             <div className="realEstateiphone">
               <img src="https://i.imgur.com/tetH7KH.png" />
-              <h3 className="real-label">Phones</h3>
+              <h3 className="real-label">Multiple Platforms</h3>
             </div>
 
             <div className="stack">

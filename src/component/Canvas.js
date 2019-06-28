@@ -1,7 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Canvas.css";
 import $ from "jquery";
-import { Z_FIXED } from "zlib";
 
 class Canvas extends React.Component {
   componentDidMount() {
