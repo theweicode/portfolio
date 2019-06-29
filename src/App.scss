@@ -7,6 +7,31 @@
   to {
     color: orange;
     border: 2px solid orange;
+    background-color: gray;
+  }
+}
+
+@keyframes flash2 {
+  0% {
+    transform: translate3d(0, 0px, 0);
+    color: #0070c9;
+  }
+
+  100% {
+    transform: translate3d(0, 120px, 0);
+    color: orange;
+  }
+}
+
+@keyframes flash3 {
+  0% {
+    transform: translate3d(0, -500px, 0);
+    color: #0070c9;
+  }
+
+  100% {
+    transform: translate3d(0, -300px, 0);
+    color: orange;
   }
 }
 
@@ -27,10 +52,17 @@ body {
   font-size: 1.2em;
 }
 
+fa-angle-double-down {
+  color: yellow;
+}
+
 .wrapper {
   background: white;
   width: 100%;
   position: relative;
+
+
+
 
   /* height: 100vh; */
   .header {
@@ -49,6 +81,13 @@ body {
     /*   grid-column-gap: 20px;
             grid-row-gap: 20px; */
     /*  grid-gap: 20px */
+
+    /* changing the arrow position */
+    i.fas {
+      color: red;
+      margin-top: -510px;
+    }
+
     .mobile-home {
       font-size: 21px;
       margin-left: 145px;
@@ -71,7 +110,6 @@ body {
         border: 2px solid white;
         padding: 10px;
         position: relative;
-        margin-bottom: 53px;
         width: 160px;
         cursor: pointer;
         transition: all 0.5s;
@@ -88,13 +126,52 @@ body {
   }
 }
 
+.desk-splash {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  grid-template-rows: 120px 500px 500px;
+
+  .desk-splash-img {
+    grid-column: 1 / 7;
+    height: 1080px;
+  }
+
+  .fas {
+    grid-column: 1 / 7;
+    font-size: 4.3em;
+    animation: flash3 2s ease-in-out infinite alternate forwards running;
+    cursor: pointer;
+    text-align: center;
+    border: 0px solid black;
+    padding-top: 150px;
+  }
+
+  .logo {
+    grid-column: 6 / 7;
+    grid-row: 3 / 4;
+    height: 250px;
+    width: 250px;
+    margin-top: 150px;
+    margin-left: -120px;
+
+  }
+
+  .title {
+    grid-column: 2 / 5;
+    font-size: 4em;
+    font-family: 'raleway';
+    font-weight: 550;
+  }
+}
+
 .about {
-  height: 1000px;
+  height: 1200px;
   color: #252934;
   background: #ffffff;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 80px 74px 70px 50px 100px 240px 150px;
+  grid-template-rows: 80px 74px 70px 50px 100px 240px 70px 0px;
   margin-top: 25px;
 
   .title {
@@ -149,11 +226,11 @@ body {
     margin-left: 20px;
   }
 
-  .btn {
-    padding: 10px 10px 0px 10px;
+  .view-proj-btn {
+    padding: 10px 10px 10px 10px;
     grid-column: 7 / 13;
     grid-row: 9/10;
-    height: 40px;
+    height: 35px;
     width: 230px;
     cursor: pointer;
     transition: all 0.5s;
@@ -167,14 +244,21 @@ body {
     z-index: 2;
     font-size: 1.5em;
     margin-left: 10px;
-    margin-top: 150px;
+    margin-top: -40px;
     animation: flash 1.6s ease-in-out infinite alternate forwards running;
+
     .fa-arrow-right {
       color: red;
       font-size: 1.2em;
     }
   }
 }
+
+.splash-grid {
+  display: none;
+}
+
+
 
 .backdrop {
   width: 100%;
@@ -186,12 +270,12 @@ body {
 
 .tech {
   height: 1200px;
-  margin-top: 180px;
+  margin-top: 90px;
   color: #252934;
   background: #ffffff;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 75px 275px 100px 100px 100px 100px 100px;
+  grid-template-rows: 75px 375px 100px 100px 100px 100px 100px;
   grid-row-gap: 10px;
 
   .logo {
@@ -199,6 +283,14 @@ body {
     width: 80px;
     grid-row: 1 / 2;
     grid-column: 1 / 2;
+  }
+
+  .res-dis {
+    height: 529px;
+    width: 906px;
+    grid-row: 2 / 3;
+    grid-column: 4 /10;
+    z-index: 100;
   }
 
   .description-real {
@@ -214,6 +306,7 @@ body {
     grid-row: 2 / 3;
     grid-column: 3 / 4;
     z-index: 1;
+
     img {
       width: 500px;
       height: 281.25px;
@@ -265,10 +358,11 @@ body {
   }
 
   .stack {
-    grid-column: 1 /13;
-    grid-row: 4 / 5;
+    grid-column: 6 /9;
+    grid-row: 5 / 6;
+
     font-size: 25pt;
-    top: 10px;
+    top: 30px;
     left: -20px;
     font-family: "raleway";
     position: relative;
@@ -276,8 +370,11 @@ body {
     font-weight: 700;
     position: relative;
     text-align: center;
+    border: 2px solid black;
     background: #ffff;
     margin: 0;
+    width: 250px;
+    height: 150px;
 
     .line {
       margin-left: 874px;
@@ -289,8 +386,8 @@ body {
   }
 
   .box-1 {
-    height: 75px;
-    width: 80px;
+    height: 130px;
+    width: 140px;
     margin-left: 10px;
     margin-top: 15px;
     background: #252934;
@@ -298,76 +395,97 @@ body {
     -moz-border-radius: 23px 23px 23px 23px;
     -webkit-border-radius: 23px 23px 23px 23px;
     border: 0px solid #000000;
-    grid-column: 4/ 5;
+    grid-column: 2/ 5;
     grid-row: 5 / 6;
 
     /*   animation: moveRight 0.7s ease-in-out infinite alternate forwards running;
  */
     .fa-node {
       color: #43853d;
-      font-size: 3.7em;
+      font-size: 6.6em;
       margin-top: 12px;
       padding: 0px 5px;
+    }
+
+    .label {
+      font-size: 2em;
     }
   }
 
   .box-2 {
-    height: 75px;
-    width: 80px;
+    height: 130px;
+    width: 140px;
     margin-top: 15px;
     background: #272c35;
     border-radius: 23px 23px 23px 23px;
     -moz-border-radius: 23px 23px 23px 23px;
     -webkit-border-radius: 23px 23px 23px 23px;
 
-    grid-column: 5 / 6;
+    grid-column: 4 / 6;
     grid-row: 5 / 6;
 
     i {
       color: #61dafb;
-      font-size: 4.5em;
+      font-size: 8em;
       padding: 0px 5px;
+    }
+
+    .label {
+      font-size: 2em;
     }
   }
 
   .box-3 {
-    height: 75px;
-    margin-top: 12px;
+    height: 130px;
 
-    width: 80px;
+    margin-top: 15px;
+
+
+    width: 140px;
     background: #272c35;
     border-radius: 23px 23px 23px 23px;
     -moz-border-radius: 23px 23px 23px 23px;
     -webkit-border-radius: 23px 23px 23px 23px;
-    grid-column: 6 / 7;
+    grid-column: 10 / 11;
     grid-row: 5 / 6;
     margin-left: -140px;
 
     i {
       color: #ce679a;
-      font-size: 3.8em;
+      font-size: 6.8em;
       margin-top: 12px;
       padding: 0px 3px;
+    }
+
+    .label {
+      font-size: 2em;
     }
   }
 
   .box-4 {
-    height: 75px;
-    width: 80px;
+    height: 130px;
+    width: 140px;
     margin-top: 12px;
-    margin-left: -50px;
     background: #272c35;
     border-radius: 23px 23px 23px 23px;
     -moz-border-radius: 23px 23px 23px 23px;
     -webkit-border-radius: 23px 23px 23px 23px;
-    grid-column: 7 / 8;
+    grid-column: 11 / 13;
     grid-row: 5 / 6;
-    margin-left: -160px;
+
 
     i {
       color: #43853d;
-      font-size: 3.7em;
+      font-size: 5.7em;
       padding: 5px 3px;
+    }
+
+    .fa-cloud {
+      font-size: 6.7em;
+    }
+
+    .label {
+      font-size: 2em;
     }
   }
 
@@ -378,7 +496,7 @@ body {
     font-family: "raleway";
     margin-left: 20px;
     margin-right: 25px;
-    margin-top: 50px;
+    margin-top: 150px;
     text-align: justify;
   }
 
@@ -411,6 +529,7 @@ body {
 
 // Small devices (landscape phones, 576px and up) (tablet)
 @media (max-width: 666px) {
+
   html,
   body {
     max-width: 100%;
@@ -536,7 +655,7 @@ body {
       line-height: 1.8em;
     }
 
-    .btn {
+    .view-proj-btn {
       padding: 5px 5px 0px 5px;
       grid-column: 6 / 13;
       grid-row: 2 / 3;
@@ -556,6 +675,36 @@ body {
       z-index: 2;
       animation: flash 2s ease-in infinite alternate forwards running;
     }
+  }
+
+  .splash-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 500px 300px;
+
+    img {
+      height: 1000px;
+      width: 100%;
+      margin-top: 175px;
+      z-index: 90;
+      grid-column: 1 / 4;
+      grid-row: 1/ 3;
+    }
+
+    i.fa-angle-double-down {
+      color: red;
+      font-size: 5em;
+
+      z-index: 100;
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
+      margin-left: 40px;
+      animation: flash2 1.6s ease-in-out infinite alternate forwards running;
+    }
+  }
+
+  .desk-splash {
+    display: none;
   }
 
   .backdrop {
@@ -624,6 +773,7 @@ body {
       grid-row: 2 / 3;
       grid-column: 1 / 5;
       z-index: 1;
+
       img {
         width: 500px;
         height: 281.25px;
@@ -648,9 +798,8 @@ body {
       display: none;
       grid-row: 2 /3;
       grid-column: 4 / 10;
-      z-index: 1 img {
 
-      }
+      z-index: 1 img {}
     }
 
     img {
@@ -692,12 +841,12 @@ body {
       padding: 10px;
       position: relative;
       height: 25px;
-      width: 136px;
+      width: 140px;
       cursor: pointer;
       transition: all 0.5s;
       font-family: "Raleway";
       position: relative;
-      font-size: 1em;
+      font-size: 0.9em;
       z-index: 2;
       text-decoration: none;
       top: 10px;

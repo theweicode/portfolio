@@ -22,7 +22,11 @@ class App extends Component {
     scroll.scrollToTop();
   }
   scrollToDemos() {
-    scroll.scrollTo(2400);
+    scroll.scrollTo(2420);
+  }
+
+  scrollToWork() {
+    scroll.scrollTo(3820);
   }
 
   render() {
@@ -63,20 +67,58 @@ class App extends Component {
               API, CSS Grid / Flex and many more. I'm excited to make a big
               impact at a high growth company.
             </div>
-            <div className="btn" onClick={this.scrollToDemos}>
+            <div className="view-proj-btn" onClick={this.scrollToDemos}>
               View my projects <i className="fas fa-arrow-right" />
             </div>
           </div>
+
+          <div className="splash-grid">
+            <img
+              alt="splash-aspan"
+              src="https://i.imgur.com/bM004e2.jpg"
+              className="splash-screen"
+            />
+            <i
+              className="fas fa-angle-double-down"
+              onClick={this.scrollToWork}
+            />
+          </div>
+          <div className="desk-splash">
+            <img
+              src="https://i.imgur.com/7fg1N02.jpg"
+              alt="desktop splash screen"
+              className="desk-splash-img"
+            />
+            <img
+              src="https://i.imgur.com/b0sEJQt.png"
+              className="logo"
+              alt="Will Ting's Logo"
+            />
+            <div className="title">Looking for your dream home?</div>
+
+            <i
+              className="fas fa-angle-double-down"
+              onClick={this.scrollToWork}
+            />
+          </div>
+
           <div className="backdrop" />
+
           <div className="tech">
             <img
               src="https://i.imgur.com/b0sEJQt.png"
               className="logo"
               alt="Will Ting's Logo"
             />
+            <img
+              src="https://i.imgur.com/1aSuEri.png"
+              className="res-dis"
+              alt="Responsive layout by Jasmine Ting"
+            />
+
             <div className="title">Real Estate App</div>
             <div className="description-real" />
-            <div className="realEstate">
+            {/*  <div className="realEstate">
               <img
                 src="https://i.imgur.com/6LZFOVs.png"
                 alt="desktopview-realestate"
@@ -96,10 +138,10 @@ class App extends Component {
                 alt="iphoneview-realEstate"
               />
               <h3 className="real-label">Multiple Platforms</h3>
-            </div>
+            </div> */}
 
             <div className="stack">
-              Tech Stack <br /> <div className="line" />
+              BUILD FROM SCARTACH WITH <br /> <div className="line" />
             </div>
             <div className="box-1">
               <span>
