@@ -32,7 +32,7 @@ class App extends Component {
           <div className="header">
             <Canvas />
             <div className="mobile-home">
-              Hello, I'm <a className="name">Will Ting</a>. <br /> I'm a
+              Hello, I'm <span className="name">Will Ting</span>. <br /> I'm a
               fullstack web developer.
               <div className="btn" onClick={this.scrollTo}>
                 View my work <i className="fas fa-arrow-right" />
@@ -69,19 +69,32 @@ class App extends Component {
           </div>
           <div className="backdrop" />
           <div className="tech">
-            <img src="https://i.imgur.com/b0sEJQt.png" className="logo" />
+            <img
+              src="https://i.imgur.com/b0sEJQt.png"
+              className="logo"
+              alt="Will Ting's Logo"
+            />
             <div className="title">Real Estate App</div>
             <div className="description-real" />
             <div className="realEstate">
-              <img src="https://i.imgur.com/6LZFOVs.png" />
+              <img
+                src="https://i.imgur.com/6LZFOVs.png"
+                alt="desktopview-realestate"
+              />
               <h3 className="real-label">Responsive Designs</h3>
             </div>
             <div className="realEstateipad">
-              <img src="https://i.imgur.com/OmgSk6Y.png" />
+              <img
+                src="https://i.imgur.com/OmgSk6Y.png"
+                alt="ipadview-realEstate"
+              />
               <h3 className="real-label">Across</h3>
             </div>
             <div className="realEstateiphone">
-              <img src="https://i.imgur.com/tetH7KH.png" />
+              <img
+                src="https://i.imgur.com/tetH7KH.png"
+                alt="iphoneview-realEstate"
+              />
               <h3 className="real-label">Multiple Platforms</h3>
             </div>
 
