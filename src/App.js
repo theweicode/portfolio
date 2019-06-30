@@ -22,11 +22,11 @@ class App extends Component {
     scroll.scrollToTop();
   }
   scrollToDemos() {
-    scroll.scrollTo(2420);
+    scroll.scrollTo(2425);
   }
 
   scrollToWork() {
-    scroll.scrollTo(3820);
+    scroll.scrollTo(4400);
   }
 
   render() {
@@ -68,7 +68,7 @@ class App extends Component {
               impact at a high growth company.
             </div>
             <div className="view-proj-btn" onClick={this.scrollToDemos}>
-              View my projects <i className="fas fa-arrow-right" />
+              View my projects
             </div>
           </div>
 
@@ -111,7 +111,7 @@ class App extends Component {
               alt="Will Ting's Logo"
             />
             <img
-              src="https://i.imgur.com/1aSuEri.png"
+              src="https://i.imgur.com/SDiyTRE.png"
               className="res-dis"
               alt="Responsive layout by Jasmine Ting"
             />
@@ -162,17 +162,18 @@ class App extends Component {
               <div className="label">RESTful-SQL</div>
             </div>
             <div className="realDesc">
-              I build this responsive project from scratch using the latest
-              frameworks including NodeJS backend along with ReactJS framework
-              and custom the layout using advanced CSS techniques such as
-              Flexbox, Grid, transitions, and animations.I also leveraged
-              Google's cloud database Firecloud to allow users to login.
+              Real Estate App is a solo project build from scratch using the
+              latest frameworks including NodeJS backend along with ReactJS
+              framework and custom the layout using advanced CSS techniques such
+              as Flexbox, Grid, transitions, and animations.The backend is
+              hosted by Google's Cloud Database - Firebase.
             </div>
             <a
-              className="btn"
+              className="live-btn"
               href="https://master.d716ee3k2f9g4.amplifyapp.com/"
             >
-              View live demos <i className="fas fa-arrow-right" />
+              <div className="wrapper" />
+              View live demo <i className="fas fa-arrow-right" />
             </a>
           </div>
         </div>
