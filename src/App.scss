@@ -1,13 +1,10 @@
 @keyframes flash {
   from {
     color: #0070c9;
-    border: 2px solid #0070c9;
   }
 
   to {
     color: orange;
-    border: 2px solid orange;
-    background-color: gray;
   }
 }
 
@@ -547,7 +544,6 @@ fa-angle-double-down {
 
 // Small devices (landscape phones, 576px and up) (tablet)
 @media (max-width: 666px) {
-
   html,
   body {
     max-width: 100%;
@@ -615,12 +611,12 @@ fa-angle-double-down {
   }
 
   .about {
-    height: 1000px;
+    height: 1200px;
     color: #252934;
     background: #ffffff;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 60px 74px 70px 50px 100px 240px 100px;
+    grid-template-rows: 80px 120px 100px 100px 100px;
 
     .title {
       grid-column: 4/ 12;
@@ -642,12 +638,14 @@ fa-angle-double-down {
       grid-row: 2 / 3;
       background: black;
       height: 4px;
+      margin-top: -15px;
     }
 
     .vert-line {
-      margin-top: 25px;
-      margin-left: 30px;
+      margin-top: 15px;
+      margin-left: 25px;
       width: 5px;
+      height: 150px;
       grid-column: 1 / 2;
       grid-row: 2 / 4;
       background: #252934;
@@ -655,8 +653,8 @@ fa-angle-double-down {
 
     .intro {
       grid-column: 3 / 13;
-      grid-row: 2 / 4;
-      margin-top: 15px;
+      grid-row: 2 / 3;
+      margin-top: 5px;
       font-size: 1.3em;
       font-family: "raleway";
       margin-left: 0px;
@@ -666,18 +664,19 @@ fa-angle-double-down {
 
     .para {
       grid-column: 2 / 14;
-      grid-row: 5 / 6;
+      grid-row: 4 / 6;
       font-family: "raleway";
       text-align: justify;
       font-size: 1em;
       line-height: 1.8em;
+      margin-top: -50px;
     }
 
     .view-proj-btn {
       padding: 5px 5px 0px 5px;
       grid-column: 6 / 13;
-      grid-row: 2 / 3;
-      top: 0px;
+      grid-row: 3 / 9;
+      top: 30px;
       left: 10px;
       height: 30px;
       width: 180px;
@@ -685,6 +684,7 @@ fa-angle-double-down {
       transition: all 0.5s;
       line-height: 11pt;
       font-family: "Raleway";
+      border: none;
       align-items: center;
       align-content: center;
       position: relative;
@@ -700,24 +700,40 @@ fa-angle-double-down {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 500px 300px;
 
-    img {
-      height: 1000px;
-      width: 100%;
-      margin-top: 175px;
-      z-index: 90;
+    .splash-screen {
+      height: 1090px;
+      position: absolute;
       grid-column: 1 / 4;
-      grid-row: 1/ 3;
+      z-index: 1;
     }
 
     i.fa-angle-double-down {
       color: red;
       font-size: 5em;
-
+      padding: 100px 0px 100px 0px;
+      cursor: pointer;
       z-index: 100;
-      grid-column: 2 / 3;
-      grid-row: 3 / 4;
-      margin-left: 40px;
+      grid-column: 2 / 4;
+      grid-row: 2 / 3;
+      margin-left: 90px;
       animation: flash2 1.6s ease-in-out infinite alternate forwards running;
+    }
+
+    .logo {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      height: 50px;
+      width: 50px;
+      z-index: 100;
+    }
+
+    .title {
+      grid-column: 2 / 3;
+      font-size: 4em;
+      font-family: "DM Serif Display", serif;
+      font-weight: 250;
+      z-index: 100;
+      grid-row: 1 / 2;
     }
   }
 
@@ -726,54 +742,55 @@ fa-angle-double-down {
   }
 
   .backdrop {
-    width: 100%;
-    height: 350px;
-    position: absolute;
-    background-image: url("https://i.imgur.com/gxOiNMP.jpg");
-    margin-top: 250px;
     display: none;
   }
 
   .tech {
-    height: 1000px;
-    margin-top: 200px;
-    color: 252934;
+    height: 1200px;
+    margin-top: 290px;
+    color: #252934;
     background: #ffffff;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 75px 300px 60px 100px 50px 100px 30px 30px 50px 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px 80px 118px 60px 50px 100px 100px;
 
     .logo {
+      height: 80px;
+      width: 80px;
+      grid-row: 2 /3;
       grid-column: 1 / 2;
-      grid-row: 1 / 2;
-      height: 75px;
-      width: 75px;
+      z-index: 50000;
     }
 
-    .title {
-      grid-column: 2 /13;
-      grid-row: 1 / 2;
-      font-size: 25pt;
-      top: 10px;
-      left: 0px;
-      font-family: "raleway";
-      position: relative;
-      color: #444649;
-      font-weight: 700;
-      margin-top: 50px;
-      position: relative;
-      text-align: left;
-      background: #ffff;
-      margin: 0;
-      font-size: 2em;
+    .live-btn {
+      grid-column: 3 / 11;
 
-      .line {
-        margin-left: 72px;
-        margin-top: 12px;
-        background: black;
-        width: 230px;
-        height: 4px;
-      }
+      grid-row: 5 / 6;
+      color: white;
+      border: 3px solid #c82021;
+      padding: 12px 15px 12px 5px;
+      margin-bottom: 0px;
+      margin-left: 0px;
+      width: 155px;
+      cursor: pointer;
+      transition: all 0.5s;
+      font-family: "Raleway";
+      text-align: center;
+      font-size: 1.3em;
+      font-weight: 550;
+      z-index: 1111;
+      text-decoration: none;
+      background-color: #c82021;
+    }
+
+    .res-dis {
+      grid-row: 3 / 4;
+
+      grid-column: 1 /5;
+      height: 225px;
+      width: 375px;
+      z-index: 100;
+      margin-left: 20px;
     }
 
     .description-real {
@@ -782,181 +799,160 @@ fa-angle-double-down {
 
     .real-label {
       font-size: 1.8em;
-      background-color: rgba(113, 128, 124, 0.8);
-      display: none;
-      font-family: "raleway";
+      background-color: rgba(255, 113, 144, 0.8);
     }
 
-    .realEstate {
+    .title {
+      grid-column: 1/11;
       grid-row: 2 / 3;
-      grid-column: 1 / 5;
-      z-index: 1;
-
-      img {
-        width: 500px;
-        height: 281.25px;
-      }
-    }
-
-    .realEstateipad {
-      display: none;
-      grid-row: 2 /3;
-      grid-column: 2 / 4;
-      z-index: 1;
-
-      img {
-        width: 153.33px;
-        height: 204.8px;
-      }
-
-      /* Equal to scaleX(0.7) scaleY(0.7) */
-    }
-
-    .realEstateiphone {
-      display: none;
-      grid-row: 2 /3;
-      grid-column: 4 / 10;
-
-      z-index: 1 img {}
-    }
-
-    img {
-      width: 250px;
-      height: 156px;
+      font-size: 25pt;
+      top: 10px;
+      border: 0px solid #000000;
+      left: 100px;
+      font-family: "raleway";
+      position: relative;
+      color: #444649;
+      font-size: 2.1em;
+      font-weight: 505;
+      margin-top: 0px;
+      position: relative;
+      text-align: left;
+      background: #ffff;
+      margin: 0;
     }
 
     .stack {
       grid-column: 1 /3;
-      grid-row: 3 / 4;
-      font-size: 25pt;
-      top: 10px;
-      left: 10px;
+      grid-row: 5 / 6;
+      left: 15px;
+      font-size: 0.9em;
+      top: 0;
       font-family: "raleway";
       position: relative;
       color: #444649;
       font-weight: 700;
       position: relative;
-      text-align: left;
+      text-align: center;
+      border: 6px solid black;
       background: #ffff;
-      margin: 0;
-      border: 2px solid black;
+      margin-left: -10px;
+      width: 150px;
+      height: 30px;
+      padding-top: 3px;
 
       .line {
-        margin-left: 16px;
-        margin-top: 4px;
+        margin-left: 0px;
+        margin-top: 15px;
         background: black;
         width: 150px;
-        height: 4px;
+        height: 6px;
       }
     }
 
-    .btn {
-      left: 20px;
-      grid-column: 3 / 6;
-      grid-row: 3 / 4;
-      color: #0070c9;
-      border: 3px solid black;
-      padding: 10px;
-      position: relative;
-      height: 25px;
-      width: 140px;
-      cursor: pointer;
-      transition: all 0.5s;
-      font-family: "Raleway";
-      position: relative;
-      font-size: 0.9em;
-      z-index: 2;
-      text-decoration: none;
-      top: 10px;
-    }
-
     .box-1 {
-      height: 75px;
-      width: 80px;
+      height: 70px;
+      width: 70px;
+
       background: #252934;
       border-radius: 23px 23px 23px 23px;
       -moz-border-radius: 23px 23px 23px 23px;
       -webkit-border-radius: 23px 23px 23px 23px;
       border: 0px solid #000000;
-      grid-column: 1 / 2;
-      grid-row: 4/ 5;
-
+      grid-column: 1/ 2;
+      grid-row: 6 / 7;
+      margin-left: 15px;
       /*   animation: moveRight 0.7s ease-in-out infinite alternate forwards running;
- */
+   */
       .fa-node {
         color: #43853d;
-        font-size: 3.7em;
+        font-size: 3.2em;
         margin-top: 12px;
         padding: 0px 5px;
+      }
+
+      .label {
+        font-size: 1em;
       }
     }
 
     .box-2 {
-      height: 75px;
-      width: 80px;
-
+      height: 70px;
+      width: 70px;
       background: #272c35;
       border-radius: 23px 23px 23px 23px;
       -moz-border-radius: 23px 23px 23px 23px;
       -webkit-border-radius: 23px 23px 23px 23px;
 
       grid-column: 2 / 3;
-      grid-row: 4/ 5;
+      grid-row: 6 / 7;
       margin-left: 15px;
 
       i {
         color: #61dafb;
-        font-size: 4.5em;
-        padding: 0px 5px;
+        font-size: 4.3em;
+        padding: 0px 0px;
+      }
+
+      .label {
+        font-size: 1em;
       }
     }
 
     .box-3 {
-      height: 75px;
-
-      width: 80px;
+      height: 70px;
+      width: 70px;
       background: #272c35;
       border-radius: 23px 23px 23px 23px;
       -moz-border-radius: 23px 23px 23px 23px;
       -webkit-border-radius: 23px 23px 23px 23px;
       grid-column: 3 / 4;
-      grid-row: 4/ 5;
-      margin-left: 20px;
+      grid-row: 6 / 7;
+      margin-left: 15px;
 
       i {
         color: #ce679a;
-        font-size: 3.8em;
+        font-size: 3.4em;
         margin-top: 12px;
         padding: 0px 3px;
+      }
+
+      .label {
+        font-size: 1em;
       }
     }
 
     .box-4 {
-      height: 75px;
-      width: 80px;
+      height: 70px;
+      width: 70px;
 
       background: #272c35;
       border-radius: 23px 23px 23px 23px;
       -moz-border-radius: 23px 23px 23px 23px;
       -webkit-border-radius: 23px 23px 23px 23px;
-      grid-column: 5 / 6;
-      grid-row: 4/ 5;
-      margin-left: 10px;
+      grid-column: 4 / 5;
+      grid-row: 6 / 7;
+      margin-right: 5px;
 
       i {
-        color: white;
-        font-size: 3.7em;
+        color: #43853d;
+        font-size: 2.7em;
         padding: 5px 3px;
+      }
+
+      .fa-cloud {
+        font-size: 3.3em;
+      }
+
+      .label {
+        font-size: 1em;
       }
     }
 
     .realDesc {
       grid-column: 1 / 13;
-      grid-row: 5 / 6;
-      font-size: 12pt;
+      grid-row: 6 / 8;
+      font-size: 1.3em;
       font-family: "raleway";
-      margin-left: 20px;
-      margin-right: 25px;
       text-align: justify;
     }
   }

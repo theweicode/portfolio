@@ -78,6 +78,12 @@ class App extends Component {
               src="https://i.imgur.com/bM004e2.jpg"
               className="splash-screen"
             />
+            <img
+              src="https://i.imgur.com/b0sEJQt.png"
+              className="logo"
+              alt="Will Ting's Logo"
+            />
+            <div className="title">Looking for your dream home?</div>
             <i
               className="fas fa-angle-double-down"
               onClick={this.scrollToWork}
@@ -118,30 +124,9 @@ class App extends Component {
 
             <div className="title">Real Estate App</div>
             <div className="description-real" />
-            {/*  <div className="realEstate">
-              <img
-                src="https://i.imgur.com/6LZFOVs.png"
-                alt="desktopview-realestate"
-              />
-              <h3 className="real-label">Responsive Designs</h3>
-            </div>
-            <div className="realEstateipad">
-              <img
-                src="https://i.imgur.com/OmgSk6Y.png"
-                alt="ipadview-realEstate"
-              />
-              <h3 className="real-label">Across</h3>
-            </div>
-            <div className="realEstateiphone">
-              <img
-                src="https://i.imgur.com/tetH7KH.png"
-                alt="iphoneview-realEstate"
-              />
-              <h3 className="real-label">Multiple Platforms</h3>
-            </div> */}
 
             <div className="stack">
-              BUILD FROM SCARTACH WITH <br /> <div className="line" />
+              BUILD FROM SCRATCH WITH <br /> <div className="line" />
             </div>
             <div className="box-1">
               <span>
@@ -172,7 +157,6 @@ class App extends Component {
               className="live-btn"
               href="https://master.d716ee3k2f9g4.amplifyapp.com/"
             >
-              <div className="wrapper" />
               View live demo <i className="fas fa-arrow-right" />
             </a>
           </div>
