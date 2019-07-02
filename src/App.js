@@ -126,7 +126,7 @@ class App extends Component {
             <div className="description-real" />
 
             <div className="stack">
-              BUILD FROM S WITH <br /> <div className="line" />
+              BUILT FROM SCRATCH WITH <br /> <div className="line" />
             </div>
             <div className="box-1">
               <span>
@@ -159,6 +159,12 @@ class App extends Component {
               href="https://master.d716ee3k2f9g4.amplifyapp.com/"
             >
               View live demo <i className="fas fa-arrow-right" />
+            </a>
+            <a
+              className="github-btn"
+              href="https://github.com/theweicode/real-estate"
+            >
+              View Git Repo <i className="fas fa-arrow-right" />
             </a>
           </div>
         </div>
