@@ -149,9 +149,10 @@ class App extends Component {
             <div className="realDesc">
               Real Estate App is a solo project build from scratch using the
               latest frameworks including NodeJS backend along with ReactJS
-              framework and custom the layout using advanced CSS techniques such
-              as Flexbox, Grid, transitions, and animations.The backend is
-              hosted by Google's Cloud Database - Firebase.
+              framework. I'm also well versed in creating fully customized
+              layouts using advanced CSS techniques such as Flexbox, Grid,
+              transitions, keyframes, and animations. I also utilize Google's
+              Cloud Database - Firebase to store data asynchronously.
             </div>
             <a
               className="live-btn"
