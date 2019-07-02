@@ -60,7 +60,7 @@ class App extends Component {
               administration and WebOps experience in large corporate and small
               family tech companies. I cut my teeth in IT Support demonstrating
               a long history of customer focus, attention to detail, patience,
-              accuracy, and time management. My passion for software developer
+              accuracy, and time management. My passion for software development
               stems from my experience in IT Support, where I realized I wanted
               to make significant differences for my company. I’m well versed in
               the latest front end tech trends including NodeJS, React, Rest
@@ -126,7 +126,7 @@ class App extends Component {
             <div className="description-real" />
 
             <div className="stack">
-              BUILD FROM SCRATCH WITH <br /> <div className="line" />
+              BUILD FROM S WITH <br /> <div className="line" />
             </div>
             <div className="box-1">
               <span>
