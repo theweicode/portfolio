@@ -10,7 +10,7 @@
 
 @keyframes flash2 {
   0% {
-    transform: translate3d(0, 0px, 0);
+    transform: translate3d(0, -100px, 0);
     color: #0070c9;
   }
 
@@ -808,7 +808,7 @@ fa-angle-double-down {
     background: #ffffff;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 400px 80px 118px 60px 50px 100px 100px;
+    grid-template-rows: 470px 80px 118px 60px 50px 100px 100px;
 
     .logo {
       height: 80px;
