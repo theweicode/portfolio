@@ -305,20 +305,75 @@ fa-angle-double-down {
 
     grid-row: 4 / 5;
     color: white;
-    border: 3px solid #c82021;
+
     padding: 12px 15px 12px 5px;
-    margin-bottom: 0px;
-    margin-left: 20px;
-    width: 195px;
+    margin-top: -30px;
+    margin-left: 82px;
+    width: 105px;
     cursor: pointer;
     transition: all 0.5s;
     font-family: "Raleway";
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: 550;
-    z-index: 1111;
+    z-index: 33111;
     text-decoration: none;
-    background-color: #c82021;
+  }
+
+  .fa-certificate1 {
+    height: 150px;
+    width: 150px;
+    color: red;
+
+    font-size: 10em;
+    z-index: 22222;
+    grid-column: 6 / 11;
+
+    grid-row: 4 / 5;
+    margin-top: -70px;
+    margin-left: 60px;
+
+
+
+  }
+
+
+  .github-btn {
+    grid-column: 6 / 11;
+    z-index: 333222;
+    grid-row: 3 / 4;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-family: "Raleway";
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 550;
+    z-index: 33111;
+    text-decoration: none;
+    color: white;
+    margin-top: -130px;
+    margin-left: 235px;
+    width: 100px;
+
+  }
+
+
+
+  .fa-certificate2 {
+    height: 150px;
+    width: 150px;
+    color: red;
+
+    font-size: 7em;
+    z-index: 22222;
+    grid-column: 6 / 11;
+    font-size: 10em;
+    grid-row: 3 / 4;
+    margin-top: -190px;
+    margin-left: 206px;
+
+
+
   }
 
   .res-dis {
@@ -544,6 +599,7 @@ fa-angle-double-down {
 
 // Small devices (landscape phones, 576px and up) (tablet)
 @media (max-width: 666px) {
+
   html,
   body {
     max-width: 100%;
@@ -763,25 +819,84 @@ fa-angle-double-down {
     }
 
     .live-btn {
-      grid-column: 3 / 11;
+      grid-column: 1/ 4;
 
-      grid-row: 5 / 6;
+      grid-row: 4/5;
+
       color: white;
-      border: 3px solid #c82021;
-      padding: 12px 15px 12px 0px;
-      margin-bottom: 0px;
-      margin-left: -8px;
-      width: 158px;
+
+      padding: 12px 15px 12px 5px;
+      margin-top: 55px;
+      margin-left: 198px;
+      width: 105px;
       cursor: pointer;
       transition: all 0.5s;
       font-family: "Raleway";
       text-align: center;
       font-size: 1.2em;
       font-weight: 550;
-      z-index: 1111;
+      z-index: 33111;
       text-decoration: none;
-      background-color: #c82021;
     }
+
+    .fa-certificate1 {
+      height: 150px;
+      width: 150px;
+      color: red;
+
+      font-size: 7em;
+      z-index: 22222;
+      grid-column: 1 / 4;
+
+      grid-row: 4 / 5;
+      margin-top: 30px;
+      margin-left: 200px;
+
+
+
+    }
+
+
+    .github-btn {
+      grid-column: 1 / 4;
+      z-index: 333222;
+      grid-row: 3 / 4;
+      cursor: pointer;
+      transition: all 0.5s;
+      font-family: "Raleway";
+      text-align: center;
+      font-size: 1.2em;
+      font-weight: 550;
+      z-index: 33111;
+      text-decoration: none;
+      color: white;
+      margin-top: 35px;
+      margin-left: 215px;
+      width: 100px;
+      color: white;
+
+    }
+
+
+
+    .fa-certificate2 {
+      height: 150px;
+      width: 150px;
+      color: red;
+
+      font-size: 7em;
+      z-index: 22222;
+      grid-column: 1 / 4;
+      font-size: 7em;
+      grid-row: 3 / 4;
+      margin-top: 0px;
+      margin-left: 206px;
+
+
+
+    }
+
+
 
     .ghost-btn {
       grid-column: 1 / 5;
@@ -882,6 +997,7 @@ fa-angle-double-down {
       grid-column: 1/ 2;
       grid-row: 6 / 7;
       margin-left: 15px;
+
       /*   animation: moveRight 0.7s ease-in-out infinite alternate forwards running;
    */
       .fa-node {

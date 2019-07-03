@@ -158,14 +158,16 @@ class App extends Component {
               className="live-btn"
               href="https://master.d716ee3k2f9g4.amplifyapp.com/"
             >
-              View live demo <i className="fas fa-arrow-right" />
+              View live demo
             </a>
+            <i className="fas fa-certificate fa-certificate1" />
             <a
               className="github-btn"
               href="https://github.com/theweicode/real-estate"
             >
-              View Git Repo <i className="fas fa-arrow-right" />
+              View Git Repo
             </a>
+            <i className="fas fa-certificate fa-certificate2" />
           </div>
         </div>
       </>
