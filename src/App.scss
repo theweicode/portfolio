@@ -701,7 +701,7 @@ fa-angle-double-down {
       margin-top: 15px;
       margin-left: 25px;
       width: 5px;
-      height: 150px;
+      height: 110px;
       grid-column: 1 / 2;
       grid-row: 2 / 4;
       background: #252934;
@@ -725,29 +725,42 @@ fa-angle-double-down {
       text-align: justify;
       font-size: 1em;
       line-height: 1.8em;
-      margin-top: -50px;
+      margin-top: -80px;
     }
 
     .view-proj-btn {
-      padding: 5px 5px 0px 5px;
-      grid-column: 6 / 13;
-      grid-row: 3 / 9;
-      top: 30px;
-      left: 10px;
-      height: 30px;
-      width: 180px;
+      padding: 12px 20px 3px 20px;
+      grid-column: 1 / 13;
+      grid-row: 7/10;
+      height: 25px;
+      width: 160px;
       cursor: pointer;
       transition: all 0.5s;
       line-height: 11pt;
       font-family: "Raleway";
-      border: none;
       align-items: center;
       align-content: center;
       position: relative;
       text-align: center;
-      font-size: 14pt;
+  
       z-index: 2;
-      animation: flash 2s ease-in infinite alternate forwards running;
+      font-size: 1.2em;
+      margin-left: 90px;
+      margin-top: 25px;
+      border-radius: 25px;
+      font-weight: 510;
+      border: 3px solid black;
+  
+      &:hover {
+        background-color: black;
+        color: white;
+      }
+  
+      .fa-arrow-right {
+        color: red;
+        font-size: 1.2em;
+        right: 5px;
+      }
     }
   }
 
