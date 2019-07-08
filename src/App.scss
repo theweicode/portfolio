@@ -700,7 +700,7 @@ fa-angle-double-down {
       grid-column: 3 / 13;
       grid-row: 2 / 3;
       margin-top: 5px;
-      font-size: 1.3em;
+      font-size: 1.2em;
       font-family: "raleway";
       margin-left: 0px;
       line-height: 1.5em;
@@ -714,7 +714,7 @@ fa-angle-double-down {
       text-align: justify;
       font-size: 1em;
       line-height: 1.8em;
-      margin-top: -80px;
+      margin-top: -90px;
     }
 
     .view-proj-btn {
@@ -735,7 +735,7 @@ fa-angle-double-down {
       z-index: 2;
       font-size: 1.2em;
       margin-left: 90px;
-      margin-top: 25px;
+      margin-top: 95px;
       border-radius: 25px;
       font-weight: 510;
       border: 3px solid black;
@@ -1088,5 +1088,19 @@ fa-angle-double-down {
     margin-top: 20px;
     text-align: center;
     font-weight: 550;
+  }
+}
+
+// iphone xr
+/* 1792x828px at 326ppi */
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+  .about {
+    background-color: red;
+    .intro {
+      font-size: 0.5em;
+    }
+    .view-proj-btn {
+      margin-top: 100px;
+    }
   }
 }

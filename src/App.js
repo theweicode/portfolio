@@ -1,8 +1,16 @@
 import React, { Component } from "react";
 import "./App.scss";
-import { animateScroll as scroll } from "react-scroll";
-
 import Canvas from "./component/Canvas";
+
+import * as Scroll from "react-scroll";
+import {
+  Link,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller
+} from "react-scroll";
 
 class App extends Component {
   constructor() {
@@ -17,6 +25,30 @@ class App extends Component {
 
   scrollTo() {
     scroll.scrollTo(1200);
+  }
+  scrollToAbout() {
+    // Somewhere else, even another file
+    scroller.scrollTo("about-section", {
+      duration: 1500,
+      delay: 100,
+      smooth: true
+    });
+  }
+  scrollToSplash() {
+    // Somewhere else, even another file
+    scroller.scrollTo("splash-section", {
+      duration: 1500,
+      delay: 100,
+      smooth: true
+    });
+  }
+  scrollToProjects() {
+    // Somewhere else, even another file
+    scroller.scrollTo("project-section", {
+      duration: 1500,
+      delay: 100,
+      smooth: true
+    });
   }
   scrollTop() {
     scroll.scrollToTop();
@@ -38,7 +70,7 @@ class App extends Component {
             <div className="mobile-home">
               Hello, I'm <span className="name">Will Ting</span>. <br /> I'm a
               fullstack web developer.
-              <div className="btn" onClick={this.scrollTo}>
+              <div className="btn" onClick={this.scrollToAbout}>
                 View my work <i className="fas fa-arrow-right" />
               </div>
               {/*  <Canvas /> */}
@@ -46,6 +78,7 @@ class App extends Component {
           </div>
 
           <div className="about">
+            <Element name="about-section" />
             <div className="title">
               ABOUT ME <br />
             </div>
@@ -67,12 +100,13 @@ class App extends Component {
               API, CSS Grid / Flex and many more. I'm excited to make a big
               impact at a high growth company.
             </div>
-            <div className="view-proj-btn" onClick={this.scrollToDemos}>
+            <div className="view-proj-btn" onClick={this.scrollToSplash}>
               View my projects
             </div>
           </div>
 
           <div className="splash-grid">
+            <Element name="splash-section" />
             <img
               alt="splash-aspan"
               src="https://i.imgur.com/bM004e2.jpg"
@@ -111,6 +145,7 @@ class App extends Component {
           <div className="backdrop" />
 
           <div className="tech">
+            <Element name="project-section" />
             <img
               src="https://i.imgur.com/b0sEJQt.png"
               className="logo"
