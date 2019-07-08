@@ -124,17 +124,19 @@ class App extends Component {
             />
           </div>
           <div className="desk-splash">
+            <Element name="splash-section" />
+            <div className="title">Looking for your dream home?</div>
             <img
               src="https://i.imgur.com/7fg1N02.jpg"
               alt="desktop splash screen"
               className="desk-splash-img"
             />
+
             <img
               src="https://i.imgur.com/b0sEJQt.png"
               className="logo"
               alt="Will Ting's Logo"
             />
-            <div className="title">Looking for your dream home?</div>
 
             <i
               className="fas fa-angle-double-down"
@@ -158,6 +160,7 @@ class App extends Component {
             />
 
             <div className="title">Real Estate App</div>
+
             <div className="description-real" />
 
             <div className="stack">
@@ -181,6 +184,7 @@ class App extends Component {
               <i className="fas fa-cloud"> </i>
               <div className="label">RESTful-SQL</div>
             </div>
+
             <div className="realDesc">
               Real Estate App is a solo project build from scratch using the
               latest frameworks including NodeJS backend along with ReactJS

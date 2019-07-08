@@ -140,7 +140,7 @@ fa-angle-double-down {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 
-  grid-template-rows: 0px 500px 500px;
+  grid-template-rows: 120px 500px 500px;
 
   .desk-splash-img {
     grid-column: 1 / 7;
@@ -155,7 +155,6 @@ fa-angle-double-down {
     text-align: center;
     border: 0px solid black;
     padding: 350px;
-    margin-top: 12%;
   }
 
   .logo {
@@ -172,8 +171,6 @@ fa-angle-double-down {
     font-size: 4em;
     font-family: "DM Serif Display", serif;
     font-weight: 550;
-    z-index: 10000;
-    margin-top: 100px;
   }
 }
 
@@ -592,7 +589,6 @@ fa-angle-double-down {
 
 // Small devices (landscape phones, 576px and up) (tablet)
 @media (max-width: 666px) {
-
   html,
   body {
     max-width: 100%;
@@ -1098,13 +1094,11 @@ fa-angle-double-down {
 // iphone xr
 /* 1792x828px at 326ppi */
 @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
-  body {
+  .about {
     background-color: red;
-
     .intro {
       font-size: 0.5em;
     }
-
     .view-proj-btn {
       margin-top: 100px;
     }
