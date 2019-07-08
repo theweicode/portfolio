@@ -58,7 +58,12 @@ class App extends Component {
   }
 
   scrollToWork() {
-    scroll.scrollTo(4400);
+    // Somewhere else, even another file
+    scroller.scrollTo("project-section", {
+      duration: 1500,
+      delay: 100,
+      smooth: true
+    });
   }
 
   render() {
@@ -143,9 +148,8 @@ class App extends Component {
           </div>
 
           <div className="backdrop" />
-
+          <Element name="project-section" />
           <div className="tech">
-            <Element name="project-section" />
             <img
               src="https://i.imgur.com/b0sEJQt.png"
               className="logo"
