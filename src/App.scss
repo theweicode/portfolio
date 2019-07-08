@@ -307,7 +307,7 @@ fa-angle-double-down {
     grid-column: 6 / 11;
 
     grid-row: 4 / 5;
-    color: white;
+    color: #0070c9;
 
     padding: 12px 15px 12px 5px;
     margin-top: -30px;
@@ -323,19 +323,6 @@ fa-angle-double-down {
     text-decoration: none;
   }
 
-  .fa-certificate1 {
-    height: 150px;
-    width: 150px;
-    color: red;
-
-    font-size: 10em;
-    z-index: 22222;
-    grid-column: 6 / 11;
-
-    grid-row: 4 / 5;
-    margin-top: -70px;
-    margin-left: 60px;
-  }
 
   .github-btn {
     grid-column: 6 / 11;
@@ -349,25 +336,13 @@ fa-angle-double-down {
     font-weight: 550;
     z-index: 33111;
     text-decoration: none;
-    color: white;
+    color: #0070c9;
     margin-top: -130px;
     margin-left: 235px;
     width: 100px;
   }
 
-  .fa-certificate2 {
-    height: 150px;
-    width: 150px;
-    color: red;
 
-    font-size: 7em;
-    z-index: 22222;
-    grid-column: 6 / 11;
-    font-size: 10em;
-    grid-row: 3 / 4;
-    margin-top: -190px;
-    margin-left: 206px;
-  }
 
   .res-dis {
     height: 529px;
@@ -827,70 +802,44 @@ fa-angle-double-down {
     .live-btn {
       grid-column: 1/ 4;
 
-      grid-row: 4/5;
+      grid-row: 5 /6;
 
-      color: white;
+      color: #0070c9;
 
       padding: 12px 15px 12px 5px;
-      margin-top: 55px;
-      margin-left: 198px;
-      width: 105px;
+      margin-top: 0px;
+      margin-left: 210px;
+      width: 155px;
       cursor: pointer;
       transition: all 0.5s;
       font-family: "Raleway";
       text-align: center;
       font-size: 1.2em;
-      font-weight: 550;
+      font-weight: 500;
       z-index: 33111;
       text-decoration: none;
     }
 
-    .fa-certificate1 {
-      height: 150px;
-      width: 150px;
-      color: red;
-
-      font-size: 7em;
-      z-index: 22222;
-      grid-column: 1 / 4;
-
-      grid-row: 4 / 5;
-      margin-top: 30px;
-      margin-left: 200px;
-    }
 
     .github-btn {
       grid-column: 1 / 4;
       z-index: 333222;
-      grid-row: 3 / 4;
+      grid-row: 5 / 6;
       cursor: pointer;
       transition: all 0.5s;
       font-family: "Raleway";
       text-align: center;
       font-size: 1.2em;
-      font-weight: 550;
+      font-weight: 500;
       z-index: 33111;
       text-decoration: none;
-      color: white;
-      margin-top: 35px;
-      margin-left: 215px;
-      width: 100px;
-      color: white;
-    }
-
-    .fa-certificate2 {
-      height: 150px;
+      color: #0070c9;
+      margin-top: 50px;
+      margin-left: 210px;
       width: 150px;
-      color: red;
-
-      font-size: 7em;
-      z-index: 22222;
-      grid-column: 1 / 4;
-      font-size: 7em;
-      grid-row: 3 / 4;
-      margin-top: 0px;
-      margin-left: 206px;
     }
+
+
 
     .ghost-btn {
       grid-column: 1 / 5;
