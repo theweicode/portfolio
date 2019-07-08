@@ -332,11 +332,7 @@ fa-angle-double-down {
     grid-row: 4 / 5;
     margin-top: -70px;
     margin-left: 60px;
-
-
-
   }
-
 
   .github-btn {
     grid-column: 6 / 11;
@@ -354,10 +350,7 @@ fa-angle-double-down {
     margin-top: -130px;
     margin-left: 235px;
     width: 100px;
-
   }
-
-
 
   .fa-certificate2 {
     height: 150px;
@@ -371,14 +364,11 @@ fa-angle-double-down {
     grid-row: 3 / 4;
     margin-top: -190px;
     margin-left: 206px;
-
-
-
   }
 
   .res-dis {
     height: 529px;
-    width: 906px;
+    width: 100%;
     grid-row: 2 / 3;
     grid-column: 4 /10;
     z-index: 100;
@@ -599,7 +589,6 @@ fa-angle-double-down {
 
 // Small devices (landscape phones, 576px and up) (tablet)
 @media (max-width: 666px) {
-
   html,
   body {
     max-width: 100%;
@@ -851,11 +840,7 @@ fa-angle-double-down {
       grid-row: 4 / 5;
       margin-top: 30px;
       margin-left: 200px;
-
-
-
     }
-
 
     .github-btn {
       grid-column: 1 / 4;
@@ -874,10 +859,7 @@ fa-angle-double-down {
       margin-left: 215px;
       width: 100px;
       color: white;
-
     }
-
-
 
     .fa-certificate2 {
       height: 150px;
@@ -891,12 +873,7 @@ fa-angle-double-down {
       grid-row: 3 / 4;
       margin-top: 0px;
       margin-left: 206px;
-
-
-
     }
-
-
 
     .ghost-btn {
       grid-column: 1 / 5;
@@ -924,7 +901,7 @@ fa-angle-double-down {
 
       grid-column: 1 /5;
       height: 225px;
-      width: 375px;
+      width: 100%;
       z-index: 100;
       margin-left: 20px;
     }
