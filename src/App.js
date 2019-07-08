@@ -104,9 +104,8 @@ class App extends Component {
               View my projects
             </div>
           </div>
-
+          <Element name="splash-section" />
           <div className="splash-grid">
-            <Element name="splash-section" />
             <img
               alt="splash-aspan"
               src="https://i.imgur.com/bM004e2.jpg"
@@ -124,7 +123,6 @@ class App extends Component {
             />
           </div>
           <div className="desk-splash">
-            <Element name="splash-section" />
             <div className="title">Looking for your dream home?</div>
             <img
               src="https://i.imgur.com/7fg1N02.jpg"
