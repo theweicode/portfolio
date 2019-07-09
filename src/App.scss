@@ -178,7 +178,7 @@ fa-angle-double-down {
 }
 
 .about {
-  height: 1200px;
+  height: 100vh;
   color: #252934;
   background: #ffffff;
   display: grid;
@@ -644,7 +644,7 @@ fa-angle-double-down {
   }
 
   .about {
-    height: 1200px;
+    height: 100vh;
     color: #252934;
     background: #ffffff;
     display: grid;
@@ -675,7 +675,7 @@ fa-angle-double-down {
     }
 
     .vert-line {
-      margin-top: 15px;
+      margin-top: 100%;
       margin-left: 25px;
       width: 5px;
       height: 110px;
@@ -687,7 +687,7 @@ fa-angle-double-down {
     .intro {
       grid-column: 3 / 13;
       grid-row: 2 / 3;
-      margin-top: 5px;
+      margin-top: 10%;
       font-size: 1.2em;
       font-family: "raleway";
       margin-left: 0px;
@@ -702,7 +702,7 @@ fa-angle-double-down {
       text-align: justify;
       font-size: 1em;
       line-height: 1.8em;
-      margin-top: -90px;
+      margin-top: -15%;
     }
 
     .view-proj-btn {
@@ -713,7 +713,7 @@ fa-angle-double-down {
       width: 160px;
       cursor: pointer;
       transition: all 0.5s;
-      line-height: 11pt;
+
       font-family: "Raleway";
       align-items: center;
       align-content: center;
@@ -722,8 +722,9 @@ fa-angle-double-down {
 
       z-index: 2;
       font-size: 1.2em;
+      line-height: 11pt;
       margin-left: 90px;
-      margin-top: 95px;
+      margin-top: 70%;
       border-radius: 25px;
       font-weight: 510;
       border: 3px solid black;
@@ -1042,10 +1043,11 @@ fa-angle-double-down {
     .realDesc {
       grid-column: 1 / 13;
       grid-row: 7 / 8;
-      font-size: 1.3em;
+      font-size: 1em;
+      line-height: 1.8em;
       font-family: "raleway";
       text-align: justify;
-      margin-top: 30px;
+      margin-top: 15%;
     }
   }
 
