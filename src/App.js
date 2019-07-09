@@ -105,11 +105,13 @@ class App extends Component {
               API, CSS Grid / Flex and many more. I'm excited to make a big
               impact at a high growth company.
             </div>
-            <div className="view-proj-btn" onClick={this.scrollToSplash}>
+            <div className="view-proj-btn" onClick={this.scrollToProjects}>
               View my projects
             </div>
           </div>
           <Element name="splash-section" />
+
+          {/* 
           <div className="splash-grid">
             <img
               alt="splash-aspan"
@@ -147,9 +149,13 @@ class App extends Component {
             />
           </div>
 
+
+ */}
+
           <div className="backdrop" />
-          <Element name="project-section" />
+
           <div className="tech">
+            <Element name="project-section" />
             <img
               src="https://i.imgur.com/b0sEJQt.png"
               className="logo"
